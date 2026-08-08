@@ -1,0 +1,26 @@
+package com.rays.program;
+
+public class CountNoOfIntegerFromString {
+	public static void main(String[] args) {
+
+		String s = "Shruti7897srfdfdf56645";
+		int count=0;
+	for(int i=0;i<s.length();i++) {
+		char ch=s.charAt(i);
+		if(Character.isDigit(ch)) {
+			count++;
+			System.out.print(ch);
+		}
+		
+	}
+	System.out.println();
+	if(count>0) {
+		System.out.println("count= " +count);
+	}
+			
+	
+	//System.out.println(s.replaceAll("[^0-9]", ""));
+	
+		}
+
+}

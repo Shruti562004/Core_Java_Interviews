@@ -1,0 +1,24 @@
+package com.rays.program;
+
+public class DuplicateChar {
+public static void main(String[] args) {
+	
+	String s="hello miss";
+	String val="";
+	
+	for(int i=0;i<s.length();i++) {
+		int count=0;
+		
+		for(int j=0;j<s.length();j++) {
+			if(s.charAt(i)==s.charAt(j)) {
+				count++;
+			}
+		}
+		
+		if(count>1 && val.indexOf(s.charAt(i))==-1) {
+			val+=s.charAt(i);
+		}
+	}
+	System.out.println(val);
+}
+}

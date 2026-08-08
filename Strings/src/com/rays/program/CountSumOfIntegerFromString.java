@@ -1,0 +1,30 @@
+package com.rays.program;
+
+public class CountSumOfIntegerFromString {
+public static void main(String[] args) {
+	
+
+	
+	String s1="Shruti453Rathore";
+	//int count=0;
+	int sum=0;
+	for(int i=0;i<s1.length();i++) {
+		char ch=s1.charAt(i);
+		if(Character.isDigit(ch)) {
+			sum+=Character.getNumericValue(ch);
+			
+			System.out.print(ch);
+	//	count++;	
+		}
+	}
+	System.out.println();
+	
+	/*if (count > 0) {
+		System.out.println(count);
+	
+	}*/
+	
+	//System.out.println(s1.replaceAll("[^0-9]", ""));
+	System.out.println(sum);
+}
+}
