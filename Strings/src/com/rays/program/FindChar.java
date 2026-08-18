@@ -3,11 +3,11 @@ package com.rays.program;
 public class FindChar {
 public static void main(String[] args) {
 	
-	String s1="Shruti";
-	char target='o';
-
+	String s1="Shiruti";
+	char target='i';
+    //boolean found = false;
     int position = s1.indexOf(target);
-	if(s1.indexOf(target)!=-1) {
+	if(position!=-1) {
 		System.out.println("char found " +target);
 		System.out.println("position " +position);
 	}
@@ -17,5 +17,21 @@ public static void main(String[] args) {
 		
 		System.out.println("position " +position);
 	}
-}
+	
+	/*for(int i=0;i<s1.length();i++) {
+		char ch=s1.charAt(i);
+		 if (ch == target) {
+             System.out.println("char found " + target);
+             System.out.println("position " + i);
+             found = true;
+             break;
+         }
+	}
+		   if (found == false) {
+	            System.out.println("char not found " + target);
+	        }*/
+		
+	}
+	
+	
 }

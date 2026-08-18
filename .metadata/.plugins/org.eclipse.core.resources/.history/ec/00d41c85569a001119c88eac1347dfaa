@@ -1,0 +1,24 @@
+package com.rays.program;
+
+public class MissingCharacter {
+public static void main(String[] args) {
+	
+	int count=0;
+
+	String s1="chinu";
+	
+	for(char c='a';c<='z';c++) {
+	
+		for (int i = 0; i < s1.length(); i++) {
+		if(s1.charAt(i)==c) {
+			count++;
+			
+		}
+	}
+		
+		if(count==0) {
+			System.out.println("missing char = " +c);
+		}
+	}
+}
+}

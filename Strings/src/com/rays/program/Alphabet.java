@@ -6,7 +6,7 @@ public class Alphabet {
 		
 		for(char c='a' ;c<='z';c++) {
 			
-			System.out.println(c);
+			System.out.print(c);
 			
 			
 		}

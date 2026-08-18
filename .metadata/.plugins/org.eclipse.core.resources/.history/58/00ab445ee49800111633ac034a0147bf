@@ -1,0 +1,24 @@
+package com.rays.program;
+
+import java.util.Scanner;
+
+public class Swapping3 {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter 1 num");
+		int a=sc.nextInt();
+		System.out.println("enter 2 num");
+		int b=sc.nextInt();
+		
+		int c;
+		
+	c=a;
+	a=b;
+	b=c;
+	
+	
+	System.out.println(a , b ,c);
+	}
+
+}

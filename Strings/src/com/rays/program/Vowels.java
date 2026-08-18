@@ -20,7 +20,7 @@ public class Vowels {
 		
 		if(count>0) {
 		
-			System.out.println(print +" count =" +count);
+			System.out.print(print +" count =" +count);
 		}
 	}
 	}

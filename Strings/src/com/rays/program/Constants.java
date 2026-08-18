@@ -20,9 +20,18 @@ public class Constants {
 		}
 		if(count>0) {
 			System.out.println(count);
+			System.out.println(print);
 		}
 		
-		System.out.println(print);
+	
 	}
 
 }
+
+
+/*	print.indexOf(ch) == -1
+
+Check karega ki ch pehle se print mein present nahi hai.
+
+indexOf(ch) >= 0 → character already present
+indexOf(ch) == -1 → character nahi mila */

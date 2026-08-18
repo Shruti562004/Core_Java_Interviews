@@ -16,12 +16,12 @@ public class Anagram {
 	
 	if(Arrays.equals(ch1, ch2)){
 	
-		System.out.println("String is Analog");
+		System.out.println("String is Anagram");
 		
 	}
 	
 	else {
-		System.out.println("String is  not Analog");
+		System.out.println("String is  not Anagram");
 	}
 
 }

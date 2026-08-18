@@ -5,7 +5,7 @@ public class StringBufferMethods {
 		
 
 	StringBuffer sb=new StringBuffer("Shrutii");
-  StringBuffer s2=sb.append(" Rathore");
+  StringBuffer s2=sb.append("Rathore");
   System.out.println(s2);
   
   System.out.println(sb.insert(3 ,"o"));

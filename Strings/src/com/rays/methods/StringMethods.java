@@ -42,23 +42,23 @@ public static void main (String[] args) {
 			String s6 = new String("SUNRAYS");
 
 			
-			boolean b = s3 == s4;
+			boolean b = s3 == s4; //true
 			System.out.println(b);
 			
-			boolean p = s3.equals(s4);
+			boolean p = s3.equals(s4); //true
 			System.out.println(p);
 			
 			boolean p1 = s5.equals(s6);
-			System.out.println(p1);
+			System.out.println(p1);   //true
 			
-			boolean b1 = s5 == (s6);
-			System.out.println(b1);
+			boolean b1 = s5 == (s6);   //falsr
+		                       	System.out.println(b1);
 			
 				
 			StringBuffer sb1 = new StringBuffer("ram");
 			StringBuffer sb2 = new StringBuffer("ram");
 			
-			boolean bb = sb1.equals(sb2);
+			boolean bb = sb1.equals(sb2);//false Stringbuffer overrie nh krta equals ko
 			System.out.println(bb);
 	}
 }

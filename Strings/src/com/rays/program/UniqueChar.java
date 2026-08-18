@@ -1,4 +1,4 @@
-package com.rays.program;
+    package com.rays.program;
 
 public class UniqueChar {
 public static void main(String[] args) {
@@ -12,6 +12,7 @@ public static void main(String[] args) {
 		if(s.charAt(i)==s.charAt(j)) {
 			
 			count++;
+			
 		}
 	}
 		if(count==1 && s.charAt(i)!=' ') {

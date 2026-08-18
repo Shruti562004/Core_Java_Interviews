@@ -1,0 +1,28 @@
+package com.rays.program;
+
+public class Armstrong {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("ArmStrong Number.....................................");
+		int num=1534;
+		int rem=0,rev;
+		int temp=num;
+		
+		while(temp>0) {
+		rev=temp%10;
+		rem=rem+rev*rev*rev;
+		temp=temp/10;
+			
+		}
+		
+		if(rem==num) {
+			System.out.println("armstrong");
+		}
+		
+		else {
+			System.out.println("not Armstrong");
+		}
+	}
+
+}

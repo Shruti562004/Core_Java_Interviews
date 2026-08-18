@@ -9,13 +9,13 @@ public class CountNoOfIntegerFromString {
 		char ch=s.charAt(i);
 		if(Character.isDigit(ch)) {
 			count++;
-			System.out.print(ch);
+
 		}
 		
 	}
-	System.out.println();
+	//System.out.print(" ");
 	if(count>0) {
-		System.out.println("count= " +count);
+		System.out.print(" count= " +count);
 	}
 			
 	

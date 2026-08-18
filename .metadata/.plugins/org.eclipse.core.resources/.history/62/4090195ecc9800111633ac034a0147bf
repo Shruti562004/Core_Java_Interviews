@@ -1,0 +1,18 @@
+package com.rays.program;
+
+public class ReverseNum {
+public static void main(String[] args) {
+	
+	int num=6968;
+	int rev=0,rem;
+	int temp=num;
+	while(num>0) {
+		rem=temp%10;
+		rev=rev*10+rem;
+		temp=temp/10;
+		
+	}
+	
+	System.out.println(rev);
+}
+}

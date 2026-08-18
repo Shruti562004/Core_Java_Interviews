@@ -1,0 +1,11 @@
+package com.rays.program;
+
+public class Armstrong {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("ArmStrong Number.....................................");
+		
+	}
+
+}

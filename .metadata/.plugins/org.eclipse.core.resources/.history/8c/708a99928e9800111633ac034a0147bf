@@ -1,0 +1,22 @@
+package com.rays.program;
+
+public class InputClass {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Add");
+		
+		Scanner sc=new Scanner(System.in);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
