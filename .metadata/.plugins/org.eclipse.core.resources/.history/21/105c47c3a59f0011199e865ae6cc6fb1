@@ -1,0 +1,30 @@
+package com.rays.arrays;
+
+
+
+public class SecondHigh {
+
+    public static void main(String[] args) {
+
+        int[] num = {1000,10,40,100,120};
+
+        int f = 0;
+        int s = 0;
+
+        for (int i = 0; i < num.length; i++) {
+
+            if (num[i] > f) {
+
+                s = f;
+                f = num[i];
+
+            } else if (num[i] > s) {
+
+                s = num[i];
+            }
+        }
+
+        System.out.println("Highest = " + f);
+        System.out.println("Second Highest = " + s);
+    }
+}

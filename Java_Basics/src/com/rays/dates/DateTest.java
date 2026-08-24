@@ -1,0 +1,22 @@
+package com.rays.dates;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateTest {
+public static void main(String[] args) throws ParseException {
+	
+	SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+
+	Date d = new Date();
+
+	String date = sdf.format(d);
+	
+	Date d1=sdf.parse("20-06-2023");
+
+	System.out.println(date);
+	System.out.println(d1);
+}
+}
+  

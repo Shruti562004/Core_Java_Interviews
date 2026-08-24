@@ -1,3 +1,4 @@
+
 package com.rays.program;
 
 public class PerfectNum {

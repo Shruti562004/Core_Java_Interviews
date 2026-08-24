@@ -1,0 +1,20 @@
+package com.rays.dates;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class BeforeDate {
+    public static void main(String[] args) throws ParseException {
+
+    	  SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+
+          Date d1 = sdf.parse("10-05-2025");
+          Date d2 = sdf.parse("10-06-2025");
+
+          System.out.println(d1.before(d2));
+          
+          System.out.println(d1.after(d2));
+          
+          System.out.println(d2.after(d1));
+    }
+}

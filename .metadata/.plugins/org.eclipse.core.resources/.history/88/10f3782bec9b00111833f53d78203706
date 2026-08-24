@@ -1,0 +1,23 @@
+package com.rays.arrays;
+
+public class SecondHigh {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 25, 5, 40, 15};
+   int size=arr.length;
+        int highest = arr[0];
+        int second = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+
+            if (arr[i] > highest) {
+                second = highest;
+                highest = arr[i];
+            }
+        }
+
+        System.out.println("Highest = " + highest);
+        System.out.println("Second Highest = " + second);
+    }
+}

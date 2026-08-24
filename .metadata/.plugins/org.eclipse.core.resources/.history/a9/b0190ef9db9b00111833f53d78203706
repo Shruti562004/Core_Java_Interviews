@@ -1,0 +1,19 @@
+package com.rays.arrays;
+
+public class LargestArray {
+
+	public static void main(String[] args) {
+		int[] num = { 12, 56, 87 };
+		
+		int h = 0;
+		
+		for(int i = 0; i < num.length; i++) {
+			
+			while (num[i] > h) {
+				h = num[i];
+				
+			}
+		}
+		System.out.println(h);
+	}
+}

@@ -1,0 +1,12 @@
+package com.rays.dates;
+import java.util.Date;
+
+public class BeforeDate {
+    public static void main(String[] args) {
+
+        Date d1 = new Date(2025 - 1900, 5, 10);
+        Date d2 = new Date(2025 - 1900, 6, 10);
+
+        System.out.println(d1.before(d2));
+    }
+}

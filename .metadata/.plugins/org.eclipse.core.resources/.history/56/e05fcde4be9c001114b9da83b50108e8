@@ -1,0 +1,21 @@
+package com.rays.dates;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class AgeCount {
+	
+	public static void main(String[] args) {
+		
+		
+		LocalDate d=LocalDate.now();
+		
+		LocalDate d1=LocalDate.of(2004, 6, 5);
+		Period p=Period.between(d, d1);
+		
+		System.out.println("age " +p);
+		
+		
+	}
+
+}

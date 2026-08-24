@@ -1,0 +1,17 @@
+package com.rays.dates;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateTest {
+public static void main(String[] args) {
+	
+	SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+
+	Date d = new Date();
+
+	String date = sdf.format(d);
+
+	System.out.println(date);
+}
+}

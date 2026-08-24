@@ -1,0 +1,13 @@
+package com.rays.dates;
+
+public class LocalMethods {
+	
+	public static void main(String[] args) {
+		
+		LocalDate date=LocalDate.of(2025,8,20); //specifuc date
+		
+	}
+	
+	
+
+}
