@@ -1,0 +1,21 @@
+package com.rays.clonning.deep;
+
+class Deep implements Cloneable{
+	int age=77;
+	
+	public Object clone() {
+		Deep d=(Deep) super.clone();
+		return age;
+		
+		
+	}
+}
+
+
+public class DeepTest {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

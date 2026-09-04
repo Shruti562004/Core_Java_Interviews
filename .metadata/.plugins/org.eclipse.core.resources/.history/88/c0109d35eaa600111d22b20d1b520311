@@ -1,0 +1,18 @@
+package com.rays.abstracts;
+
+abstract class Shape {
+	abstract void area();
+
+}
+
+class Circle extends Shape{
+public int radius;
+	@Override
+	void area() {
+		
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+package com.rays.constructor;
+
+public class Circle {
+	
+	public int radius;
+	
+	public Circle(it radius) {
+		this.radius=radius;
+	}
+
+}

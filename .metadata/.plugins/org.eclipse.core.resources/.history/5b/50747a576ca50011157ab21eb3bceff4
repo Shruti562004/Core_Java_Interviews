@@ -1,0 +1,12 @@
+package com.rays.polymorphism;
+
+public class Manager extends EmployeeArgs {
+
+	 @Override
+	    public void calculateSalary(double percentages) {
+
+	       
+
+	        System.out.println("Manager Salary: " + totalSalary);
+	    }
+}

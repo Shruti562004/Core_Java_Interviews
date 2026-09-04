@@ -1,0 +1,38 @@
+package com.rays.clonning;
+
+
+class BankAccount implements Cloneable{
+	public double balance=0;
+	
+	public BankAccount(double balance) {
+		this.balance=balance;
+	
+	}
+	
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
+}
+
+
+
+public class BankAccountTest {
+	public static void main(String[] args) throws CloneNotSupportedException {
+		BankAccount bank=new BankAccount(10);	
+		
+		BankAccount bank1=(BankAccount) bank.clone();
+System.out.println("original");
+		System.out.println(bank.balance);
+		System.out.println(bank1.balance);
+		
+		System.out.println("clone");
+		bank1.balance=5;
+		
+		System.out.println(bank.balance); 
+		System.out.println(bank1.balance);
+		
+	}
+
+
+}

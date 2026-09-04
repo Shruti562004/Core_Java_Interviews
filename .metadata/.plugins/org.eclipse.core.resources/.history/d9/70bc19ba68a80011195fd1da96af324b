@@ -1,0 +1,31 @@
+package com.rays.clonning.shallow;
+
+ class Emp implements Cloneable{
+	int age=2;
+	Company company;
+	public Object clone() throws CloneNotSupportedException {
+		
+		return  super.clone();
+		
+	}
+	
+	
+}
+public class EmpTest {
+	public static void main(String[] args) throws CloneNotSupportedException {
+		Emp e=new Emp();
+		Emp e1=(Emp) e.clone();
+		Company company=new Company();
+	System.out.println("before");
+	System.out.println(e.age);
+	System.out.println(e1.age);
+	
+	e1.age=44;
+	
+System.out.println("after");
+System.out.println(e.age);
+System.out.println(e1.age);
+	
+	}
+
+}

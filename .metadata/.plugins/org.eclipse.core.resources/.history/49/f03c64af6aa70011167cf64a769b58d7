@@ -1,0 +1,20 @@
+package com.rays.methodreturn;
+
+public class ShapeTest {
+	
+	public static void calArea(Shape[] s) {
+		for(Shape sp:s) {
+			System.out.println(sp.area());
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		Shape s[] = new Shape[2];
+
+		s[0] = Shape.getShape(1);
+
+		s[1] = Shape.getShape(2);
+	}
+
+}

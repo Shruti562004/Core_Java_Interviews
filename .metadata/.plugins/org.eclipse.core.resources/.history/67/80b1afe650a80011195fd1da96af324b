@@ -1,0 +1,18 @@
+package com.rays.constructor;
+
+class Student{
+	
+	public Student() {
+		System.out.println("Shruti");
+	}
+	public Student(String lname) {
+		this.lname=lname;
+		
+	}
+}
+public class StudentTest {
+public static void main(String[] args) {
+	
+	
+}
+}

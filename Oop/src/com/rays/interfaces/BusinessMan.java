@@ -1,0 +1,33 @@
+package com.rays.interfaces;
+
+public class BusinessMan  implements RichMan, SocialWorkers{
+
+	@Override
+	public void helpToOthers() {
+	System.out.println("help to other");
+		
+	}
+
+	@Override
+	public void earnMoney() {
+	System.out.println("earn money");
+		
+	}
+
+	@Override
+	public void donation() {
+	System.out.println("donation to all");
+		
+	}
+
+	@Override
+	public void party() {
+	System.out.println("pary cheers!!");
+		
+	}
+	
+	public void go() {
+		System.out.println("go to your home");
+	}
+
+}

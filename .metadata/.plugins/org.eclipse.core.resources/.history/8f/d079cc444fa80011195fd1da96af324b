@@ -1,0 +1,20 @@
+package com.rays.constructor;
+
+
+ class Parents{
+	 public Parents() {
+		 System.out.println("hellooo");
+	 }
+ }
+ 
+ class Childs extends Parents{
+	 public Childs() {
+		 System.out.println("ghghgh");
+	 }
+ }
+public class ParentTest {
+public static void main(String[] args) {
+	
+	
+}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Anagram.java&apos; to &apos;Oop/src/com.rays.encapsulation&apos;&#x0D;&#x0A;- Original project: &apos;Strings&apos;&#x0D;&#x0A;- Destination element: &apos;Oop/src/com.rays.encapsulation&apos;&#x0D;&#x0A;- Original element: &apos;com.rays.program.Anagram.java&apos;" description="Copy compilation unit" destination="=Oop/src&lt;com.rays.encapsulation" element1="/src&lt;com.rays.program{Anagram.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1787830564568" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,12 @@
+package com.rays.interfaces;
+
+
+ interface Animal{
+	 int num=89;
+	void eat();
+	
+}
+ 
+public class AnimalTest {
+
+}

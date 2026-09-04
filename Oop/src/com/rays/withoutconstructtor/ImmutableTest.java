@@ -1,0 +1,19 @@
+package com.rays.withoutconstructtor;
+
+public class ImmutableTest {
+
+	public static void main(String[] args) {
+
+		// jab hum object bnate hai to constructor call hota hai this.name = "shruti"
+
+		Immutable t = new Immutable("Shruti", new Address("agra"));
+		
+//		Address a = t.getAddress();
+//		a.setCity("delhi");
+		
+		System.out.println(t.getName());
+		System.out.println(t.getAddress().getCity());
+
+	}
+
+}

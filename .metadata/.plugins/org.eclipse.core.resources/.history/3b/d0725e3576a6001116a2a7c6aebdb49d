@@ -1,0 +1,26 @@
+package com.rays.methodOverloading;
+
+import sun.jvm.hotspot.debugger.Address;
+
+public final class Immutable {
+
+	private final String name;
+	private final Address address;
+
+	public Immutable(String name, Address address) {
+		this.name = name;
+		
+		 // Create a copy of the mutable object to ensure immutability
+		this.address = new Address(address.getCity());
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	 public Address getAddress() {
+	        // Return a copy of the mutable object
+	        return new Address(address.getCity());
+	    }
+
+}

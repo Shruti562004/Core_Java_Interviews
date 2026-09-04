@@ -1,0 +1,34 @@
+package com.rays.abstracts;
+
+abstract class Shape {
+	abstract void area();
+
+}
+
+class Circle extends Shape{
+public int radius;
+
+	@Override
+	void area() {
+		double area=3.14*radius*radius;
+		System.out.println("area circle " +area);
+	}
+}
+	
+	class Rectangle extends Shape{
+		public int length;
+		public int width;
+			@Override
+			void area() {
+				double area=length*width;
+				System.out.println("area Rectangle  " +area);
+			}
+	}
+	
+	public class Shape{
+		public static void main(String[] args) {
+			
+		}
+	}
+	
+

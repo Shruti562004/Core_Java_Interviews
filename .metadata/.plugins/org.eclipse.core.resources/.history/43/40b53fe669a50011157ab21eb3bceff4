@@ -1,0 +1,17 @@
+package com.rays.polymorphism;
+
+public class AnimalTestWithArray {
+	public static void main(String[] args) {
+		
+		AnimalWithArray[] ani= new AnimalWithArray[1];
+		
+		ani[0]=new Dog();
+		ani[1]=new Cat();
+		
+		for(AnimalWithArray a:ani) {
+			a.eat();
+		}
+		
+	}
+
+}

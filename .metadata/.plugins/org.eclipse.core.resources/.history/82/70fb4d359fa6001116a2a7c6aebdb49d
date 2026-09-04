@@ -1,0 +1,28 @@
+package com.rays.constructor;
+
+ class Parent {
+	
+	public Parent() {
+		
+		System.out.println("this is our implicit Constructor...");
+	}
+	
+	
+	
+
+}
+
+class Child{
+	
+	
+	
+}
+
+
+public class ImplicitCalling{
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

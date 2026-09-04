@@ -1,0 +1,8 @@
+package com.rays.abstracts;
+abstract class Animal{
+	abstract void eat();
+	
+}
+public class AnimalTest {
+
+}

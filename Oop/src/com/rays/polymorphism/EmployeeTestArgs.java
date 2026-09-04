@@ -1,0 +1,20 @@
+package com.rays.polymorphism;
+
+
+
+public class EmployeeTestArgs {
+	
+	public static void main(String[] args) {
+		
+	    calculate(new Manager(), 10000, 20);
+	    calculate(new Developer(), 16000, 40);
+	}
+	
+	 public static void  calculate(EmployeeArgs e,double salary ,double percentage) {
+		
+		    e.setSalary(salary);
+		 e.calculateSalary(percentage);
+		 
+	 }
+
+}

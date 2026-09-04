@@ -1,0 +1,13 @@
+package com.rays.clonning.shallow;
+
+ class Emp implements Cloneable{
+	int age=2;
+	
+	
+}
+public class EmpTest {
+	public static void main(String[] args) {
+		
+	}
+
+}

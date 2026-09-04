@@ -1,0 +1,18 @@
+package com.rays.clonning;
+class BankAccount implements Cloneable{
+	public double balance=0;
+	
+	public BankAccount(double balance) {
+		this.balance=balance;
+	}
+	
+	public Object clone() {
+		return super.clone();
+	}
+	
+}
+
+
+public class BankAccountTest {
+
+}

@@ -1,0 +1,33 @@
+package com.rays.constructor;
+
+
+ class Parents{
+	 int age;
+	 public Parents(int age) {
+		 this.age=age;
+		 System.out.println("hellooo" +age);
+	 }
+	 
+	public Parents() {
+		System.out.println("klkl");
+	}
+	 
+	 
+ }
+ 
+ class Childs extends Parents{
+int num;
+	 public Childs(int age ,int num) {
+		 super(age);
+	this.num=num;
+		 System.out.println("ghghgh");
+	 }
+ }
+public class ParentTest {
+public static void main(String[] args) {
+Childs sp=new Childs(6,6);
+Childs sp1=new Childs(age, num);
+
+	
+}
+}

@@ -1,0 +1,20 @@
+package com.rays.methodreturn;
+
+import com.rays.polymorphism.ShapeWithParentRef;
+
+public class Triangle  extends Shape{
+	
+	int base;
+	int height;
+	
+	public Triangle() {
+		
+		
+	}
+	
+	public double area() {
+		return base;
+	
+	}
+
+}

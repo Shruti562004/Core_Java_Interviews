@@ -1,0 +1,40 @@
+package com.rays.clonning.shallow;
+
+class BankAccountDetail implements Cloneable{
+	double balance;
+	BankNumber  bankNum;
+	
+	public BankAccountDetail(double balance) {
+		
+		this.balance=balance;
+		
+	}
+	
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+	
+	
+}
+
+public class BankAccountDetTest {
+public static void main(String[] args) throws CloneNotSupportedException {
+	
+	BankAccountDetail det=new BankAccountDetail(1000);
+	det.bankNum=new BankNumber();
+	
+	BankAccountDetail det1=(BankAccountDetail) det.clone();
+	det.bankNum.accNumber=675;
+	System.out.println("before-------");
+	System.out.println(det.balance);
+	System.out.println(det.bankNum.accNumber);
+	System.out.println(det1.balance);
+	
+	System.out.println("=================");
+	
+	System.out.println("after-------");
+	System.out.println(det.balance);
+	System.out.println(det.bankNum.accNumber);
+	System.out.println(det1.balance);
+}
+}

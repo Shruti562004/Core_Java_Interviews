@@ -1,0 +1,6 @@
+package com.rays.interfaces;
+
+public interface SocialWorkers {
+public void helpToOthers();
+
+}

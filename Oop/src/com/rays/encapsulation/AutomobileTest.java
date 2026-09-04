@@ -1,0 +1,29 @@
+package com.rays.encapsulation;
+
+public class AutomobileTest {
+	
+	public static void main(String[] args) {
+		
+		Automobile auto=new Automobile();
+		auto.setMake("1990");
+		
+		auto.setColor("blue");
+		
+		auto.setGear(8);
+		auto.setSpeed(60);
+		
+		System.out.println(auto.getColor());
+		System.out.println(auto.getMake());
+		System.out.println(auto.getSpeed());
+		System.out.println(auto.getGear());
+		
+		System.out.println(auto.changeGear(3));
+		
+		
+		
+		
+		
+		
+	}
+
+}

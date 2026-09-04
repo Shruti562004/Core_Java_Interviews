@@ -1,0 +1,32 @@
+package com.rays.constructor;
+
+ class ParentImp {
+	
+	public ParentImp() {
+		
+		System.out.println("this is our implicit Constructor...");
+	}
+	
+	
+	
+
+}
+
+class ChildImp extends ParentImp{
+	
+	public ChildImp(String name) {
+        // Java automatically tries super();
+        System.out.println(name);
+    }
+	
+}
+
+
+public class ImplicitCalling{
+	
+	public static void main(String[] args) {
+		
+		ChildImp imp=new ChildImp("shruti");
+		
+	}
+}

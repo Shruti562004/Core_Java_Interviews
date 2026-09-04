@@ -1,0 +1,7 @@
+Hierarchical Inheritance
+
+package com.rays.inheritance;
+
+public class Shape {
+
+}

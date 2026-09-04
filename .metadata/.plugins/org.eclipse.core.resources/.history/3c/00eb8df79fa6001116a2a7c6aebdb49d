@@ -1,0 +1,30 @@
+package com.rays.constructor;
+
+
+class ParentEx {
+	
+	public ParentEx(int age) {
+		
+		System.out.println("this is our explicit Constructor... " +age);
+	}
+	
+	
+	
+
+}
+
+class ChildEx extends ParentEx{
+	
+	public ChildEx(String name) {
+        // Java automatically tries super();
+        System.out.println(name);
+    }
+	
+}
+
+public class ExplicitCalling {
+public static void main(String[] args) {
+	
+	
+}
+}

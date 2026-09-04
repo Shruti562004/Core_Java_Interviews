@@ -1,0 +1,13 @@
+package com.rays.methodOverriding;
+
+public class Manager  extends Employee{
+	  @Override
+	public void calculateSalary(double percentages) {
+		
+		if(salary>0 && percentages>0){
+		salary=salary+(salary*percentages/100);
+		System.out.println("salary after bonus "+salary);
+		}
+	}
+	
+}

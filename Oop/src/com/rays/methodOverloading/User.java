@@ -1,0 +1,26 @@
+package com.rays.methodOverloading;
+
+public class User {
+	
+	public void name(String name) {
+		System.out.println("what is your  name ");
+	}
+
+	
+	public void name(String name , String lastName) {
+		System.out.println("my name  is  "+name + " " + lastName);
+	}
+
+	public void name(int age) {
+		System.out.println("and my age is  "+age);
+	}
+	
+	public static void main(String[] args) {
+		
+		User u=new User();
+		u.name("Shruti");
+		u.name("Shruti", "Rathore");
+		u.name(22);
+		
+	}
+}

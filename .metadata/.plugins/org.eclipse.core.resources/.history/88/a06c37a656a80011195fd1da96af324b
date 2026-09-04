@@ -1,0 +1,36 @@
+package com.rays.constructor;
+class Parenty {
+	int num;
+	public Parenty(int num) {
+		this.num=num;
+		System.out.println("parent con" +num);
+	}
+}
+class Student extends Parenty{
+	String lname;
+	int age;
+	public Student() {
+		super(100);
+		System.out.println("Shruti");
+	}
+	public Student(String lname) {
+		this();
+		this.lname=lname;
+		System.out.println("Shruti " +lname);
+	}
+	
+	public Student(String lname, int age) {
+	
+		super(56);
+		this.age=age;
+		System.out.println("Shruti "+lname +" " +age);
+	}
+}
+public class StudentTest {
+public static void main(String[] args) {
+	Student s=new Student();
+	Student s1=new Student("Rathore");
+
+	Student s2=new Student("Rathore",22);
+}
+}

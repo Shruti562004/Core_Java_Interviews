@@ -1,0 +1,9 @@
+package com.rays.methodreturn;
+
+public class ShapeTest {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.rays.polymorphism;
+
+public class Triangle  extends ShapeWithParentRef{
+	public void color() {
+		System.out.println("color blue");
+	}
+
+}

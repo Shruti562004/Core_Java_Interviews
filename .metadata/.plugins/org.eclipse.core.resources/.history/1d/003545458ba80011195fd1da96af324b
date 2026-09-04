@@ -1,0 +1,13 @@
+package com.rays.clonning.shallow;
+
+class BankAccountDetail{
+	
+	
+}
+
+public class BankAccountDetTest {
+public static void main(String[] args) {
+	
+	
+}
+}

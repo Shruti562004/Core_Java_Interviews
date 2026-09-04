@@ -1,0 +1,19 @@
+package com.rays.polymorphism;
+
+import com.rays.methodreturn.Triangle;
+
+public class ShapeTestWithParentRef {
+	
+	public static void main(String[] args) {
+		
+		
+		ShapeWithParentRef s1=new Circle();
+		ShapeWithParentRef s2=new Triangle();
+		
+		s1.color();
+		s2.color();
+				
+				
+	}
+
+}

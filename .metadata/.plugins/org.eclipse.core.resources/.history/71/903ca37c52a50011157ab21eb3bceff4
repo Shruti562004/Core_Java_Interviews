@@ -1,0 +1,38 @@
+package com.rays.encapsulation;
+
+public class Employee {
+	
+	public int id;
+	public String name;
+	public double salary;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		salary = salary;
+	}
+	
+	
+	public  void incrementSalary(double percentage) {
+		if(salary > 0 && percentage > 0) {
+			
+	     salary = salary + (salary * percentage / 100);
+		System.out.println("new salary" +salary);
+		}
+	}
+
+}

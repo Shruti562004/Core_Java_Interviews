@@ -16,14 +16,14 @@ public class CalendarModify {
 
 		Date d = sdf.parse("01-01-2026");
 		
-		c.setTime(d);
+		c.setTime(d);       
 		
 		for (int i = 1; i <= 12; i++) {
 			System.out.println(sdf.format(c.getTime()));
 			c.add(Calendar.DATE, 30);
 				//	c.add(Calendar.DATE, 3);
 
-		}
+		}   
 
 
 	}

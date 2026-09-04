@@ -1,0 +1,23 @@
+package com.rays.clonning.deep;
+class Customer implements Cloneable{
+	String name;
+	BankAccountDetails acc;
+	public Customer(String name , BankAccountDetails acc) {
+		this.name=name;
+		this.acc=acc;
+	}
+	
+	public Object clone() {
+		Customer c=(Customer) super.clone();
+		c.acc=  (BankAccountDetails) acc.clone();
+	}
+	
+}
+public class CustomerTest {
+public static void main(String[] args) {
+	
+	
+	
+	
+}
+}

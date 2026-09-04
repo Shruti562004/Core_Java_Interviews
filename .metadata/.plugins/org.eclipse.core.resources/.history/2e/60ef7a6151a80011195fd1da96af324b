@@ -1,0 +1,26 @@
+package com.rays.constructor;
+
+class Student{
+	String lname;
+	int age;
+	public Student() {
+		System.out.println("Shruti");
+	}
+	public Student(String lname) {
+		this.lname=lname;
+		System.out.println("Shruti " +lname);
+	}
+	
+	public Student(String lname, int age) {
+		this.age=age;
+		System.out.println("Shruti "+lname +" " +age);
+	}
+}
+public class StudentTest {
+public static void main(String[] args) {
+	Student s=new Student();
+	Student s1=new Student("Rathore");
+
+	Student s2=new Student("Rathore",22);
+}
+}

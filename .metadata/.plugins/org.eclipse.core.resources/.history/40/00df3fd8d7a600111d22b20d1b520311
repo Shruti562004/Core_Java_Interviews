@@ -1,0 +1,22 @@
+package com.rays.abstracts;
+abstract class Animal{
+	abstract void eat();
+	public void sleep() {
+		System.out.println("sleeepiinnggggggggggggggggggggggg/..");
+	}
+	
+	class Dog{
+		public void eat() {
+			System.out.println("dog is eating");
+		}
+		
+		public void sound() {
+			System.out.println("barks");
+		}
+		
+	}
+	
+}
+public class AnimalTest {
+
+}

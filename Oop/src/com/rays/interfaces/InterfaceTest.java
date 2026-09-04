@@ -1,0 +1,19 @@
+package com.rays.interfaces;
+
+public class InterfaceTest {
+	
+	public static void main(String[] args) {
+		
+		RichMan man1=new BusinessMan();
+		SocialWorkers so=new BusinessMan();
+		man1.donation();
+		man1.earnMoney();
+		man1.party();
+		
+		so.helpToOthers();
+		
+		BusinessMan man=new BusinessMan();
+		man.go();
+	}
+
+}

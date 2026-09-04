@@ -1,0 +1,27 @@
+package com.rays.constructor;
+
+ class Parent {
+
+	
+
+	    public Parent() {
+	        System.out.println("Parent Constructor");
+	    }
+
+}
+	class Child extends Parent {
+
+	    public Child() {
+	        super();  // calls Parent constructor
+	        System.out.println("Child Constructor");
+	    }
+	}
+
+	public class CallParentFromChild {
+
+	    public static void main(String[] args) {
+
+	        Child c = new Child();
+	    }
+	
+}

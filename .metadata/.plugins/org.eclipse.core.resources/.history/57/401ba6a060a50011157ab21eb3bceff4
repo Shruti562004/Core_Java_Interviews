@@ -1,0 +1,8 @@
+package com.rays.methodOverriding;
+
+public class BaseCtlTest {
+public static void main(String[] args) {
+	UserCtl ctl=new UserCtl();
+	ctl.getView();
+}
+}

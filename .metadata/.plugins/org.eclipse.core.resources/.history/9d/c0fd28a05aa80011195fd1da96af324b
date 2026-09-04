@@ -1,0 +1,36 @@
+package com.rays.clonning;
+
+//BankAccount classs make
+class Customer implements Cloneable{
+	String name=null;
+	BankAccount account=null;
+	public Customer(String name) {
+		this.name=name;
+		account=new BankAccount(10);
+	}
+	
+	public Object clone() throws CloneNotSupportedException {
+		Customer c=(Customer) super.clone();
+		c.account=(BankAccount) account.clone();
+		
+		return c;
+	}
+}
+public class DeepClonning {
+public static void main(String[] args) throws CloneNotSupportedException {
+	Customer c1=new Customer("Ram");
+	Customer c2=(Customer) c1.clone();
+	c2.name="Chinu";
+	c2.account.balance=20;
+	
+	System.out.println("original ");
+	System.out.println("Name " +c1.name);
+	System.out.println("Balance" +c1.account.balance);
+	
+
+	System.out.println("Cloned ");
+	System.out.println("Name " +c2.name);
+	System.out.println("Balance" +c2.account.balance);
+	
+}
+}

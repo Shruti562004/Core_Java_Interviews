@@ -1,0 +1,9 @@
+package com.rays.interfaces;
+
+public interface BaseDao {
+	
+	public void add();
+	oublic void update();
+	public void delete();
+
+}

@@ -1,0 +1,15 @@
+package com.rays.inheritance;
+
+public class ShapeTest {
+public static void main(String[] args) {
+	
+	
+	Circle c=new Circle();
+	c.setColor("red");
+	c.setBorderWidth(3);
+	c.setRadius(2);
+	c.area();
+	
+	
+}
+}

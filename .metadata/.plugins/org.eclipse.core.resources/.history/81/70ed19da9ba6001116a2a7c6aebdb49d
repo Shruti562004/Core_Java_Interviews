@@ -1,0 +1,21 @@
+package com.rays.constructor;
+
+package oop;
+
+public class ConstructorCallingTest {
+
+	public static void main(String[] args) {
+
+		// Default constructor
+		ConstructorCalling c1 = new ConstructorCalling();
+
+		// One parameter constructor
+		ConstructorCalling c2 = new ConstructorCalling("Shruti");
+
+		// Two String parameters constructor
+		ConstructorCalling c3 = new ConstructorCalling("Shruti", "Rathore");
+
+		// String and int parameters constructor
+		ConstructorCalling c4 = new ConstructorCalling("Shruti", 22);
+	}
+}
