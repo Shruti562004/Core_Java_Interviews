@@ -1,0 +1,12 @@
+package com.rays.custom;
+
+public class LoginException extends Exception {
+	/*public LoginException() {
+		super("Invalid User ID/Password");
+	}*/
+	public LoginException(String msg) {
+		super(msg);
+	}
+}
+
+

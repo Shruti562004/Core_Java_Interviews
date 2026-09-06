@@ -1,0 +1,15 @@
+package com.rays.checked;
+
+public class ClassNotFoundTest {
+public static void main(String[] args) {
+	try {
+	Class.forName("com.rays.checked.FileNotFoundExceptionTests");
+	System.out.println("Class Found");
+}
+	
+	catch (ClassNotFoundException e) {
+	System.out.println(e.getMessage());
+	System.out.println("no found");
+	}
+}
+}

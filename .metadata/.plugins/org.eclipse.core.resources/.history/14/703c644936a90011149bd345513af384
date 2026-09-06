@@ -1,0 +1,10 @@
+package com.rays.exception;
+
+public class StringIndexOfBoundsExcTest {
+public static void main(String[] args) {
+	
+	
+	String name="darsh";
+	System.out.println(name.charAt(7));
+}
+}

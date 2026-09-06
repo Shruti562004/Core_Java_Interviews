@@ -1,0 +1,10 @@
+package com.rays.checked;
+
+public class InterruptedExceptionTest {
+public static void main(String[] args) {
+	
+	   System.out.println("Before sleep");
+	Thread.sleep(2000);
+	   System.out.println("After sleep");
+}
+}

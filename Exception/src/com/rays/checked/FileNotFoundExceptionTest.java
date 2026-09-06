@@ -1,0 +1,20 @@
+package com.rays.checked;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class FileNotFoundExceptionTest {
+public static void main(String[] args) {
+	try {
+		FileReader file = new FileReader("D:\\Core_Java_Interviews\\Exception\\src\\java.txt");
+    
+    System.out.println("File opened successfully");
+
+} catch (FileNotFoundException e) {
+
+    System.out.println("File not found");
+}
+
+System.out.println("Program continues");
+}
+}

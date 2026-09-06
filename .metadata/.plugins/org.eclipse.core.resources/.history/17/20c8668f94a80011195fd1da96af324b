@@ -1,0 +1,22 @@
+package com.rays.exception;
+
+public class ArithmeticException {
+public static void main(String[] args) {
+	
+int a=8;
+int b=0;
+
+int c;
+
+try {
+c=a/b;
+
+
+System.out.println("c is " +c);
+
+}
+catch(ArithmeticException ae) {
+	System.out.println(ae);
+}
+}
+}

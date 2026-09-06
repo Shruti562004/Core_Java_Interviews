@@ -1,0 +1,15 @@
+package com.rays.unchecked;
+
+public class StringIndexOutOfBoundsExcTest {
+public static void main(String[] args) {
+	
+	
+	String name="darsh";
+	try {
+	System.out.println(name.charAt(7));
+	}
+	catch(StringIndexOutOfBoundsException ex) {
+		System.out.println(ex.getMessage());
+	}
+}
+}

@@ -1,0 +1,15 @@
+package com.rays.unchecked;
+
+public class UncheckedEx2 {
+	   public static void main(String[] args) {
+	        m1();
+	    }
+
+	    static void m1() {
+	        m2();
+	    }
+
+	    static void m2() {
+	        int a = 10 / 0;
+	    }
+}

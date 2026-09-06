@@ -1,0 +1,33 @@
+package com.rays.exception;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FinallyTest {
+
+    public static void main(String[] args) {
+
+        FileReader file = null;
+
+        try {
+            file = new FileReader("D:\\Core_Java_Interviews\\Exception\\src\\java.txt");
+
+            System.out.println("File opened successfully");
+
+        } catch (IOException e) {
+            System.out.println("File not found");
+        } finally {
+
+            try {
+                if (file != null) {
+                    file.close();
+                    System.out.println("File closed successfully");
+                }
+            } catch (IOException e) {
+                System.out.println("Error while closing file");
+            }
+        }
+
+        System.out.println("Program continues");
+    }
+}

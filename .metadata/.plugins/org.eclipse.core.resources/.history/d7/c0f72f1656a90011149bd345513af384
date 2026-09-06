@@ -1,0 +1,5 @@
+package com.rays.checked;
+
+public class FileNotFoundExceptionTest {
+
+}

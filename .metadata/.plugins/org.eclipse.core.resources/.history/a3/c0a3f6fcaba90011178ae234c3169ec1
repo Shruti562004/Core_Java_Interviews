@@ -1,0 +1,21 @@
+package com.rays.custom;
+
+public class TestLoginException {
+	public static void main(String[] args) {
+		
+		
+		String name="Shruti";
+		if(name.equals("Shruti")) {
+			System.out.println("valid user");
+		}
+		else {
+			try {
+				throw new LoginException();
+			} catch (LoginException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

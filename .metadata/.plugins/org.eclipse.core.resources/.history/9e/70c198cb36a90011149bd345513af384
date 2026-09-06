@@ -1,0 +1,23 @@
+package com.rays.exception;
+
+public class ArithmeticExceptionTest {
+public static void main(String[] args) {
+	
+int a=8;
+int b=0;
+
+int c;
+
+try {
+c=a/b;
+
+
+System.out.println("c is " +c);
+System.out.println("tgg");
+}
+catch(ArithmeticException ae) {
+	System.out.println(ae.getMessage());
+	System.out.println("ggh");
+}
+}
+}

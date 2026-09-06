@@ -1,0 +1,19 @@
+package com.rays.exception;
+
+public class TestSystemExit {
+public static void main(String[] args) {
+		
+		try {
+			String s = null;
+			System.out.println(s.length());
+			System.exit(0);
+		} catch (RuntimeException e) {
+			System.out.println("catch");
+			e.printStackTrace();
+		} finally {
+			System.out.println("finally");
+		}
+		
+		
+	}
+}

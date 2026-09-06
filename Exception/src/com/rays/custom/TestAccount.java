@@ -1,0 +1,13 @@
+package com.rays.custom;
+
+public class TestAccount {
+public static void main(String[] args) throws InsufficientBalance {
+	
+	Account s=new Account();
+	
+	s.setBalance(4000);
+	
+	s.deposit(500);
+	s.withdrawn(5000);
+}
+}
