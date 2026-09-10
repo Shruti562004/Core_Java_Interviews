@@ -13,9 +13,10 @@ c=a/b;
 
 
 System.out.println("c is " +c);
-System.out.println("tgg");
+System.out.println("tgg");// not
 }
 catch(ArithmeticException ae) {
+	System.out.println("ggh");
 	System.out.println(ae.getMessage());
 	ae.printStackTrace();
 	System.out.println("ggh");

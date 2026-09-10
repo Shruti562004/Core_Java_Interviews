@@ -7,6 +7,7 @@ public static void main(String[] args) {
 	System.out.println("Arrayyy");
 	
 	try {
+		System.out.println(a.length);
 	System.out.println(a[6]);
 	}
 	catch (ArrayIndexOutOfBoundsException e) {

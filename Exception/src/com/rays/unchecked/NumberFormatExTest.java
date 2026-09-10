@@ -4,8 +4,8 @@ public class NumberFormatExTest {
 	
 	public static void main(String[] args) {
 		
-		String s="abc";
-		
+		String s="abc";//exception
+		//s="133"; no exception
 		try {
 		int a=Integer.parseInt(s);
 		System.out.println(a);
