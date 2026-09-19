@@ -1,0 +1,22 @@
+package com.rays.set.linkedHashset;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class TestLinkedHashSet {
+	
+	public static void main(String[] args) {
+		
+	
+	HashSet<String> s=new HashSet<String>();
+	s.add("34");
+	s.add("67");
+	s.add("1");
+	Iterator<String> it=s.iterator();
+	while(it.hasNext()) {
+		String s1=it.next();
+		System.out.println(s1);
+		
+	}
+}
+}

@@ -1,0 +1,20 @@
+package com.rays.streamAPI;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+
+import java.util.stream.Collectors;
+
+public class DistinctMethods {
+public static void main(String[] args) {
+	
+	
+	Collection <String> l=Arrays.asList("A","A","C" ,"V","B","L","L");
+	
+	l.stream().sorted().distinct().collect(Collectors.toList()).forEach(System.out::println);
+	
+	//System.out.println(e);
+	
+}
+}

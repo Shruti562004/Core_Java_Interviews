@@ -1,0 +1,49 @@
+package com.rays.list.arraylist;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+public class TestCity {
+public static void main(String[] args) {
+	
+	
+	ArrayList<String> list=new ArrayList<>();
+	list.add("indore");
+	list.add("pune");
+	list.add("agra");
+	
+//	Print all element
+	
+	/*Iterator it=list.iterator();
+
+	while(it.hasNext()) {
+	String str=	(String) it.next();
+	
+	System.out.println(str);*/
+	
+	
+	//sort list
+	
+	Collections.sort(list);
+	
+	for(Object o:list) {
+		
+		String st=(String) o;
+		System.out.println(st);
+		
+	}
+	
+	
+	//create subString
+	ArrayList li=new ArrayList(list.subList(1, 3));
+	System.out.println(li);
+	
+	
+	//convet to array
+	
+	Object[] o=list.toArray();
+	System.out.println(o);
+	System.out.println(o.toString());
+	}
+}

@@ -1,0 +1,31 @@
+package com.rays.exception;
+
+public class TryMultipleCatch2 {
+	
+	public static void main(String[] args) {
+		
+		 int a[]= {5,7,5};
+		 
+		 System.out.println(a[4]);
+	
+		try {
+			int c=10/0; //arithmetic occurs
+			
+			System.out.println("hjhhj");
+			System.out.println(c);
+		}
+		catch(ArithmeticException e) {
+			e.printStackTrace();
+		}
+		catch(NullPointerException e1) {
+			
+			System.out.println("hjhhj");
+			e1.printStackTrace();
+		}
+		
+		finally {
+			System.out.println("finallyy");
+		}
+	}
+
+}

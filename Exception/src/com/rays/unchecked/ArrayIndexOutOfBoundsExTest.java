@@ -14,6 +14,6 @@ public static void main(String[] args) {
 	e.printStackTrace();
 	}
 	
-	System.out.println("ArrayIndexOutOfBoundsException");
+	System.out.println("ghghArrayIndexOutOfBoundsException");
 }
 }

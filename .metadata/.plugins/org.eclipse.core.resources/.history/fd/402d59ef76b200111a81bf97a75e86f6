@@ -1,0 +1,13 @@
+package com.rays.comparable;
+
+import java.util.ArrayList;
+
+public class FirstLastTest {
+public static void main(String[] args) {
+	
+	ArrayList<FirstLast> l=new ArrayList<FirstLast>();
+	l.add(new FirstLast("Shruti" , "Rathore"));
+}
+
+
+}

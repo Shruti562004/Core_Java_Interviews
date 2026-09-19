@@ -1,0 +1,8 @@
+package com.rays.collection;
+
+public class ArrayClass {
+public static void main(String[] args) {
+	
+	String[] players= {"sh","ru","ti"};
+}
+}

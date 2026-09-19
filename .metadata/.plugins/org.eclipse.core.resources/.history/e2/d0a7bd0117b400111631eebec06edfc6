@@ -1,0 +1,10 @@
+package com.rays.streamAPI.filter;
+
+public class ArrayTest {
+public static void main(String[] args) {
+	
+	int[] a= {6,6,88,8,0,3,55};
+	
+	
+}
+}

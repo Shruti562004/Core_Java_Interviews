@@ -1,0 +1,10 @@
+package com.rays.set.treeset;
+
+import java.util.TreeSet;
+
+public class TestTreeset {
+public static void main(String[] args) {
+	
+	TreeSet<Integer> s=new TreeSet<Integer>();
+}
+}

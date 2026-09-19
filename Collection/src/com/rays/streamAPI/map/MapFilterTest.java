@@ -1,0 +1,16 @@
+package com.rays.streamAPI.map;
+
+import java.util.Arrays;
+
+public class MapFilterTest {
+public static void main(String[] args) {
+
+	        int[] arr = {5, 12, 7, 20, 15, 8, 30};
+
+	        Arrays.stream(arr)
+	              .filter(n -> n > 10)
+	              .map(n -> n * n)
+	              .forEach(System.out::println);
+	    }
+	}
+

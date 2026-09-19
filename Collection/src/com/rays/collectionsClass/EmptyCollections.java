@@ -1,0 +1,16 @@
+package com.rays.collectionsClass;
+
+import java.util.Collection;
+import java.util.Collections;
+
+public class EmptyCollections {
+
+
+    public static void main(String[] args) {
+
+        Collection<String> c = Collections.emptyList();
+
+        System.out.println(c);
+        System.out.println(c.size());
+    }
+}

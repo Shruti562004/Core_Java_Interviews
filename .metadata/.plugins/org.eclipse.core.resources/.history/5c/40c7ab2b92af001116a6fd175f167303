@@ -1,0 +1,30 @@
+package com.rays.unchecked;
+
+public class UnchekedException {
+	public static void main(String[] args) throws ArithmeticException {
+		
+		dad();
+	}
+
+	public static void dad() {
+		System.out.println("65566565");
+		mom();
+		System.out.println("67ythg");
+
+	}
+
+	public static void mom() {
+		son();
+		System.out.println("hhggh");
+	}
+
+	public static void son() {
+		System.out.println("hh");
+
+		int a=8/0;
+		System.out.println("helloooooooooooo");
+
+	}
+	
+	
+}

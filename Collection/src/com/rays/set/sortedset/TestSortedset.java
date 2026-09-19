@@ -1,0 +1,47 @@
+package com.rays.set.sortedset;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class TestSortedset {
+public static void main(String[] args) {
+	SortedSet<String> s=new TreeSet<String>();
+	s.add("1");
+	s.add("1");
+	s.add("78");
+	s.add("3");
+	
+	System.out.println(s); // ascending order automatically
+	
+	System.out.println(s.first()); //first   
+	System.out.println(s.last()); //last
+	
+	System.out.println(s.headSet("3"));  //→ "3" se pehle ke elements. 3 include nahi hota.
+	System.out.println(s.tailSet("4"));  //→ "4" se 4 ya greater elements. include
+	System.out.println(s.subSet("3", "7"));
+	System.out.println("----------------------------------------------------");
+	SortedSet<String> s1 = new TreeSet<>();
+
+	s1.add("Rahul");
+	s1.add("Amit");
+	s1.add("Neha");
+	s1.add("Pooja");
+	s1.add("Shruti");
+
+	System.out.println(s1);
+	System.out.println(s1.headSet("Pooja"));
+	
+	System.out.println(s1.tailSet("Rahul"));
+	
+	
+	/*first()      → smallest
+last()       → largest
+headSet(x)   → x se pehle
+tailSet(x)   → x se x ke baad
+subSet(a,b)  → a se b ke beech
+comparator() → sorting comparator*/
+}
+
+
+
+}

@@ -1,0 +1,37 @@
+package com.rays.custom;
+
+public class Account {
+	
+	public int balance;
+
+	public int getBalance() {
+		return balance;
+	}
+
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
+
+	
+	public void deposit(int amount) {
+		balance =balance+amount;
+		System.out.println("after deposit " +balance);
+	}
+	
+	
+	
+	public void withdrawn(int amount) throws InsufficientBalance {
+		
+		if(amount>balance) {
+			throw new InsufficientBalance();
+			System.out.println("errott");
+		}
+		else {
+		balance =balance-amount;
+		System.out.println("after withdrawn " +balance);
+	}
+	}
+}
+
+
+

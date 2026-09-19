@@ -1,0 +1,37 @@
+package com.rays.hashCode;
+
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TestListEqualsHashcode {
+	
+	public static void main(String[] args) {
+
+		Employee e1 = new Employee(1, "abc", 100);
+		Employee e2 = new Employee(2, "xyz", 100);
+		Employee e3 = new Employee(3, "aaa", 100);
+
+
+		List list = new ArrayList(); // no use hashcode  
+		//equals
+
+		list.add(e1); //no eq , no hash
+		list.add(e2);
+		list.add(e3);
+
+
+		System.out.println("list: " + list);
+
+		Employee emp = new Employee(1, "abc", 100);
+		list.add(emp);
+
+		System.out.println("list: " + list);
+		//in equals
+		System.out.println("list: " + list.remove(emp)); // eq , true 
+
+		System.out.println("list: " + list);
+	}
+
+}

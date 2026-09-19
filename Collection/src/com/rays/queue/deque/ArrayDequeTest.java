@@ -1,0 +1,25 @@
+package com.rays.queue.deque;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+public class ArrayDequeTest {
+public static void main(String[] args) {
+	
+	Deque q=new ArrayDeque();
+	q.add("shruti");
+	q.add("varun");
+	q.add("semi");
+	q.add("amore");
+	System.out.println(q);
+	
+	q.addFirst("you");
+	q.addLast("bye");
+	System.out.println(q);
+	
+	System.out.println(q.remove());
+	
+	System.out.println(q.element());
+	
+}
+}

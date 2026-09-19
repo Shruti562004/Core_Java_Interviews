@@ -18,13 +18,17 @@ public class CheckedException {
 	}
 
 	public static void mom() throws Exception {
+		
+		System.out.println("hjh");
 		son();
+		
 
 	}
 
 	public static void son() throws Exception {
-
-		throw new Exception();
+System.out.println("kkj");
+	
+	Class.forName("com.rays.checked.FileNotFoundExceptionTests");
 
 	}
 

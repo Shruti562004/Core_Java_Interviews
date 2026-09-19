@@ -1,0 +1,5 @@
+package com.rays.streamAPI.filter;
+
+public class ArrayStream {
+
+}

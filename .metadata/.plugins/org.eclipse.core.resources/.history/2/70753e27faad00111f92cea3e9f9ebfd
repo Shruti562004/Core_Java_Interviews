@@ -1,0 +1,31 @@
+package com.rays.unchecked;
+
+public class UnchekedException {
+	public static void main(String[] args) {
+		try {
+		dad();
+		}
+		catch (Exception e) {
+		e.printStackTrace();
+		}
+	}
+
+	public static void dad() {
+		System.out.println("65566565");
+		mom();
+		System.out.println("67ythg");
+
+	}
+
+	public static void mom() {
+		son();
+		int a=8/0;
+		System.out.println("hhggh");
+	}
+
+	public static void son() {
+		System.out.println("hh");
+		System.out.println("helloooooooooooo");
+
+	}
+}

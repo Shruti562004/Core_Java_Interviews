@@ -1,0 +1,18 @@
+package com.rays.comparable;
+
+public class Employee {
+
+	int id;
+	String name;
+	String dep;
+	
+	
+	public Employee(int id,String name ,String dep) {
+		this.id=id;
+		this.name=name;
+		this.dep=dep;
+		
+		
+		
+	}
+}

@@ -1,0 +1,14 @@
+package com.rays.streamAPI;
+
+public class EmployeeTest {
+public static void main(String[] args) {
+	
+	
+	List<Employee> employees = new ArrayList<>();
+	employees.add(new Employee("Alice", 50000));
+	employees.add(new Employee("Bob", 70000));
+	employees.add(new Employee("Charlie", 60000));
+	employees.add(new Employee("David", 80000));
+	employees.add(new Employee("David", 80000));
+}
+}

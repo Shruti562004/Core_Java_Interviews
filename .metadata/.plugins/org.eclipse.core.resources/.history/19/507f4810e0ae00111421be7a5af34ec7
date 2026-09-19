@@ -1,0 +1,18 @@
+package com.rays.list.linkedlist;
+
+import java.util.LinkedList;
+
+public class TestName {
+public static void main(String[] args) {
+	
+	LinkedList<String> s=new LinkedList<String>();
+	s.add("varun");
+	s.add("darsh");
+	s.add("chinu");
+	System.out.println(s);
+	
+	s.addFirst("sandeep");
+	
+	System.out.println(s);
+}
+}

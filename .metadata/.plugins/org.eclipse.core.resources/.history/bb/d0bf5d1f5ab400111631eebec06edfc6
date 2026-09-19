@@ -1,0 +1,32 @@
+package com.rays.streamAPI;
+
+
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class SortEmployeesByDepartmentId {
+
+	public static void main(String[] args) {
+
+		List<Employee1> employees = new ArrayList<>();
+
+		employees.add(new Employee1("Ram", 2));
+		employees.add(new Employee1("Shyam", 1));
+		employees.add(new Employee1("Jay", 3));
+		employees.add(new Employee1("Amit", 1));
+//asc
+		employees.stream()
+				.sorted(Comparator.comparing(Employee1::getDepartmentId))
+				.forEach(e -> System.out.println(
+						e.getName() + " " + e.getDepartmentId()));
+		;
+//dec
+		employees.stream()
+				.sorted(Comparator.comparing(Employee1::getDepartmentId).reversed())
+				.forEach(e -> System.out.println(
+						e.getName() + " " + e.getDepartmentId()));
+	
+	}
+}

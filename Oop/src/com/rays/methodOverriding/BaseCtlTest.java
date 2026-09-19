@@ -8,7 +8,7 @@ public static void main(String[] args) {
 	LoginCtl log=new LoginCtl();
 	log.getView();
 	
-	BaseCtl base=new LoginCtl();
+	BaseCtl base=new LoginCtl();//polymorphism
 	base.getView();
 	
 	//LoginCtl ct=new BaseCtl(); nooo

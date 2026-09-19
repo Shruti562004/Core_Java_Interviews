@@ -8,6 +8,13 @@ public static void main(String[] args) throws InsufficientBalance {
 	s.setBalance(4000);
 	
 	s.deposit(500);
+	
+	try {
 	s.withdrawn(5000);
+	}
+	
+	catch (InsufficientBalance e) {
+		System.out.println(e);
+	}
 }
 }

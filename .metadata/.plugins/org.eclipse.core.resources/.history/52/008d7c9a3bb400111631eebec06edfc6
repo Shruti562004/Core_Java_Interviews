@@ -1,0 +1,9 @@
+package com.rays.streamAPI;
+
+public class DistinctMethods {
+public static void main(String[] args) {
+	
+	String[] s= {"A","A","C" ,"V","B","L","L"};
+	System.out.println(s);
+}
+}

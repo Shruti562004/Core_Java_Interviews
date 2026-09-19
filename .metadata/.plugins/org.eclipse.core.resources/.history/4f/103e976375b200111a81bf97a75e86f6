@@ -1,0 +1,19 @@
+package com.rays.comparable;
+
+public class FirstLast  implements Comparable<FirstLast>{
+
+	String first;
+	String last;
+	
+	public  FirstLast() {
+	this.first=first;
+	this.last=last;
+	
+	}
+	@Override
+	public int compareTo(FirstLast o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

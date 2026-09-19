@@ -1,0 +1,20 @@
+package com.rays.list.arraylist;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ReverseArrayList {
+public static void main(String[] args) {
+	
+	ArrayList l=new ArrayList();
+l.add("3");
+l.add("8");
+l.add("0");
+System.out.println(l);
+
+
+Collections.reverse(l);
+System.out.println(l);
+}
+}

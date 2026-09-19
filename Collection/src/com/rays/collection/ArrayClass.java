@@ -1,0 +1,20 @@
+package com.rays.collection;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayClass {
+public static void main(String[] args) {
+	
+	String[] players= {"sh","ru","ti"};
+	
+	Arrays.sort(players);
+	
+	System.out.println(Arrays.toString(players));
+	
+	List l=Arrays.asList(players);
+	System.out.println(l);
+	l.set(0, "ys");
+	System.out.println(l);
+}
+}

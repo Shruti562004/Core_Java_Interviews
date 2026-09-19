@@ -1,0 +1,27 @@
+package com.rays.list.linkedlist;
+
+import java.util.LinkedList;
+
+public class LinkedListMethods {
+public static void main(String[] args) {
+	
+	LinkedList<String> s=new LinkedList<String>();
+	
+	System.out.println(s);
+	
+	s.add("varun");
+	s.add("darsh");
+	s.add("chinu");
+	s.add("surbhi");
+	System.out.println(s);
+	
+	s.addFirst("shruti");  //Beginning mein add
+	s.addLast("sandeep"); //End mein add
+	
+	System.out.println(s);
+	
+	System.out.println(s.get(2));
+	System.out.println(s.getFirst()); //First element
+	System.out.println(s.getLast()); //Last element
+}
+}

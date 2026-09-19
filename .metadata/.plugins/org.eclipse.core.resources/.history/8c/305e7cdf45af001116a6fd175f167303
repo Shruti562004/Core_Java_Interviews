@@ -1,0 +1,17 @@
+package com.rays.queue;
+
+public class TestMethods {
+public static void main(String[] args) {
+	
+	Queue<String> q = new LinkedList<>();
+
+	q.add("A");
+	q.add("B");
+	q.add("C");
+
+	System.out.println(q.peek());    // A
+	System.out.println(q.poll());    // A
+	System.out.println(q.remove());  // B
+	System.out.println(q.element()); // C
+}
+}

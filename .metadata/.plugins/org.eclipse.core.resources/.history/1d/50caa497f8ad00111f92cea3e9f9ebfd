@@ -1,0 +1,24 @@
+package com.rays.unchecked;
+
+public class UnchekedException {
+	public static void main(String[] args) {
+		dad();
+	}
+
+	public static void dad() {
+		mom();
+		System.out.println("67ythg");
+
+	}
+
+	public static void mom() {
+		son();
+		throw new RuntimeException();
+	}
+
+	public static void son() {
+		System.out.println("hh");
+		System.out.println("helloooooooooooo");
+
+	}
+}

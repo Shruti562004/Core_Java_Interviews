@@ -1,0 +1,30 @@
+package com.rays.collection;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class FailFast {
+
+	public static void main(String[] args) {
+
+		ArrayList list = new ArrayList();
+
+		list.add("one");
+		list.add("two");
+		list.add("three");
+
+		System.out.println(list); //execute
+
+		Iterator it = list.iterator();
+		
+		list.add("four");    //  Iterator banne ke baad direct add nahi kr skte
+		
+		list.remove("two");   // Iterator banne ke baad direct remove nahi kr skte
+
+	
+		while (it.hasNext()) {
+			System.out.println(it.next());
+			
+		}
+	}
+}

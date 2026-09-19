@@ -1,0 +1,22 @@
+package com.rays.exception;
+
+public class TryWithoutCatch {
+public static void main(String[] args) {
+	
+ int a[]= {5,7,5};
+ 
+ System.out.println(a[4]);
+	try {
+	
+		System.out.println("hghh");
+	System.out.println(8/0); //arithmetic
+		
+	}
+	
+	finally {
+		System.out.println("6676");
+	}
+	
+	
+}
+}

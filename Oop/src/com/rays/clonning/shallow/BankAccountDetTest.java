@@ -19,9 +19,9 @@ class BankAccountDetail implements Cloneable{
 
 public class BankAccountDetTest {
 public static void main(String[] args) throws CloneNotSupportedException {
-	
-	BankAccountDetail det=new BankAccountDetail(1000);
-	det.bankNum=new BankNumber();
+	BankAccountDetail det=new BankAccountDetail(1000); //complre time
+
+	det.bankNum=new BankNumber();// remove nullpoinetre at runtime
 	
 	BankAccountDetail det1=(BankAccountDetail) det.clone();
 	det.bankNum.accNumber=675;

@@ -8,14 +8,16 @@ public class TestLoginException {
 		
 		String name="Shruti";
 		
+		String password="pass@123";
+		
 		try {
-		if(name.equals("Shrui")) {
+		if(name.equals("hruti") && password.equals("pass@123")) {
 			System.out.println("valid user");
 		}
 		
 		else {
-		
-				throw new LoginException("Invalid login and [assword");
+		  System.out.println("invalid");
+				throw new LoginException("Invalid login and password");
 			} 
 		}catch (LoginException e) {
 				// TODO Auto-generated catch block

@@ -1,0 +1,13 @@
+package com.rays.set.sortedset;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class TestSortedset {
+public static void main(String[] args) {
+	SortedSet<String> s=new TreeSet<String>();
+	s.add("1");
+	s.add("2");
+	s.add("3");
+}
+}

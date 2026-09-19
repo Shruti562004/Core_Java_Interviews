@@ -1,0 +1,15 @@
+package com.rays.streamAPI;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class ArrayToStream {
+public static void main(String[] args) {
+	
+	String[] str= {"hs","goop","call","hs"};
+	Stream s=Arrays.stream(str);
+	s.sorted().forEach(System.out::println);
+	
+	
+}
+}

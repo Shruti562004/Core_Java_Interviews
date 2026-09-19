@@ -1,0 +1,15 @@
+package com.rays.list.arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReverseArrayList {
+public static void main(String[] args) {
+	
+	
+List l=new ArrayList();
+l.add("3");
+l.add("8");
+l.add("0");
+}
+}

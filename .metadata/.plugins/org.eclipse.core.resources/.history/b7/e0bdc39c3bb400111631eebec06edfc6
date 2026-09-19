@@ -1,0 +1,12 @@
+package com.rays.streamAPI;
+
+import java.util.Arrays;
+
+public class DistinctMethods {
+public static void main(String[] args) {
+	
+	
+	List l=Arrays.asList("A","A","C" ,"V","B","L","L");
+	
+}
+}

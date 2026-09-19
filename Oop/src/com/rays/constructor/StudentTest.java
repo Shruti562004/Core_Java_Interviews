@@ -1,4 +1,4 @@
-//implicit + explicit
+//same class calling + explicit
 package com.rays.constructor;
 class Parenty {
 	int num;

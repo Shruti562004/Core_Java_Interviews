@@ -1,0 +1,20 @@
+package com.rays.streamAPI;
+
+public class SortEmployeesByDepartmentId {
+	public static void main(String[] args) {
+
+		List<Employee1> employees = new ArrayList<>();
+
+		employees.add(new Employee1("Ram", 2));
+		employees.add(new Employee1("Shyam", 1));
+		employees.add(new Employee1("Jay", 1));
+		employees.add(new Employee1("Vijay", 3));
+
+		List<Employee1> sortedEmployees = employees.stream().sorted(Comparator.comparingInt(Employee1::getDepartmentId))
+				.collect(Collectors.toCollection(ArrayList::new));
+
+		sortedEmployees.forEach(
+				employee -> System.out.println(employee.getName() + " " + employee.getDepartmentId()));
+
+	}
+}

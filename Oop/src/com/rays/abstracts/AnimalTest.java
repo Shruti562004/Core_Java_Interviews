@@ -28,15 +28,8 @@ public class AnimalTest {
 		//ani.sound(); error
 		
 		Dog d=new Dog();
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		ani.sleep();
+	
 		
 		d.sound();
 	System.out.println(ani.num);

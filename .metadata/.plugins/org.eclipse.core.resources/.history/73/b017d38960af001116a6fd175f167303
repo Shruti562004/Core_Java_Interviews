@@ -1,0 +1,18 @@
+package com.rays.queue;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
+public class ExceptionThrowTest {
+    public static void main(String[] args) {
+
+        Deque<String> d = new LinkedList<String>(2);
+
+        d.addFirst("A");
+        d.addFirst("B");
+
+        System.out.println(d);
+
+        d.addFirst("C");  // Exception
+    }
+}

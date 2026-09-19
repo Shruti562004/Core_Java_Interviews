@@ -23,7 +23,9 @@ public class Account {
 	public void withdrawn(int amount) throws InsufficientBalance {
 		
 		if(amount>balance) {
+			System.out.println("s");
 			throw new InsufficientBalance();
+		
 		}
 		else {
 		balance =balance-amount;

@@ -1,0 +1,29 @@
+package com.rays.queue.priority;
+
+import java.util.Iterator;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
+public class Priority {
+public static void main(String[] args) {
+	
+	Queue q=new PriorityQueue(); //sort ascending
+	q.offer("6");
+	q.offer("1");
+	q.offer("8");
+q.offer(null);
+
+	q.offer("8");
+System.out.println(q);
+
+Object e=q.element();
+System.out.println(e);
+e=q.remove();
+System.out.println(e);
+
+Iterator<String> it=q.iterator();
+while(it.hasNext()) {
+	System.out.println(it.next());
+}
+}
+}

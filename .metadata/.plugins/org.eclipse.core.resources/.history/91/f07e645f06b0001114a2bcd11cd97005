@@ -1,0 +1,24 @@
+package com.rays.exception;
+
+public class FinallyTryCatch {
+	
+	public static void main(String[] args) {
+
+	try {
+	    System.out.println("Outer try");// yes
+	}
+	finally {
+	    try {
+	        int a = 10 / 0; //acception
+	        System.out.println(a);
+	    } 
+	catch(ArithmeticException e) {
+		e.addSuppressed(exception);
+	}
+
+	    System.out.println("Finally"); // no  kyuki❌ nahi chala, kyunki yhh wale finally ke baad exception bahar propagate ho gayi.
+	}
+	
+	System.out.println("yh");
+}
+}

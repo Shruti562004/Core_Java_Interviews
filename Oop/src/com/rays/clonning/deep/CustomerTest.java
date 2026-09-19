@@ -15,7 +15,7 @@ class Customer implements Cloneable {
         Customer c = (Customer) super.clone();
 
         // Deep cloning
-        c.acc = (BankAccountDetails) acc.clone();
+     //c.acc = (BankAccountDetails) acc.clone(); // remove clone same op bankAccount ka
 
         return c;
     }
@@ -29,9 +29,9 @@ public class CustomerTest {
        
         cus.acc = new BankAccountDetails();
         cus.acc.balance = 500;
-        Customer cus1 = (Customer) cus.clone();
+        Customer cus1 = (Customer) cus.clone();  //  remove clone same op both obj and primitive
 
-      
+  
 
         System.out.println("before");
 
@@ -40,7 +40,7 @@ public class CustomerTest {
 
         System.out.println(cus1.name);
         System.out.println(cus1.acc.balance);
-
+cus1.name="chinu";
         cus1.acc.balance = 899;
 
         System.out.println("after");

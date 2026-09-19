@@ -1,0 +1,17 @@
+package com.rays.queue;
+
+import java.util.Deque;
+
+public class ExceptionThrowTest {
+    public static void main(String[] args) {
+
+        Deque<String> d = new MyDeque(2);
+
+        d.addFirst("A");
+        d.addFirst("B");
+
+        System.out.println(d);
+
+        d.addFirst("C");  // Exception
+    }
+}

@@ -1,0 +1,15 @@
+package com.rays.streamAPI.filter;
+
+import java.util.Arrays;
+
+public class ArrayTest {
+public static void main(String[] args) {
+	
+	int[] a= {6,6,88,8,0,3,55};
+	
+	//Arrays.stream(a).filter(n -> n > 10).forEach(n->System.out.println(n));
+Arrays.stream(a).filter(n->n>10).sum().forEach(n->System.out.println(n));
+	
+	//System.out.println(sum);
+}
+}

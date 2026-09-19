@@ -9,7 +9,7 @@ public static void main(String[] args) {
 	Thread.sleep(2000);
 	   System.out.println("After sleep");
 
-       throw new InterruptedException();
+       throw new InterruptedException(); // manually call then excp came
 	  }
 	  catch(InterruptedException e){
 		  e.printStackTrace();

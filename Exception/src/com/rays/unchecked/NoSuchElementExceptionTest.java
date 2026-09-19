@@ -13,22 +13,16 @@ public class NoSuchElementExceptionTest {
         list.add("Java");
         list.add("Python");
 
-        Iterator<String> itr = list.iterator();
+        Iterator<String> it = list.iterator();
    
-        try {
-        	 for (int i = 0; i < 3; i++) { //hasNext() only ptrint exist ob
-        		 
-           
-                     System.out.println(itr.next());
-        	
-        	
-     /*   System.out.println(itr.next()); // Java
-        System.out.println(itr.next()); // Python
-
-      
-            System.out.println(itr.next()); // No element available */
-                 }
-        	}
+        while (it.hasNext()) {
+			System.out.println(it.next());
+		}
+try {
+	
+			System.out.println(it.next());
+		} 
+		
         catch (NoSuchElementException e) {
             System.out.println("No element available");
             e.printStackTrace();

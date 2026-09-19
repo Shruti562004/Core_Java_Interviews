@@ -1,0 +1,22 @@
+package com.rays.set.treeset;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TestTreeset {
+public static void main(String[] args) {
+	
+	TreeSet<Integer> s=new TreeSet<Integer>();
+	s.add(3);
+	s.add(6);
+	s.add(0);
+	s.add(0);
+	s.add(5);
+	
+	Iterator<Integer> it=s.iterator();
+	while(it.hasNext()) {
+		int i=it.next();
+		System.out.println(i);
+	}
+}
+}

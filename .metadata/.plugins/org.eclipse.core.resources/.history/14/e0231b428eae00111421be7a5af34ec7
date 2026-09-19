@@ -1,0 +1,42 @@
+
+package com.rays.list.arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListTest {
+	
+	public static void main(String[] args) {
+		
+		
+		List<String> list=new ArrayList<String>();
+		list.add("1");
+		list.add("2");
+		list.add("4");
+			list.add("4");
+	
+		
+		//add index  at 2 
+		list.add(2, "3");
+		System.out.println(list);
+		
+		//get value
+		System.out.println(list.get(3));
+		
+		
+		List<String> list2=new ArrayList<String>();
+		list2.add("5");
+		list2.add("6");
+		
+		System.out.println(list2);
+		
+		System.out.println(list.subList(1, 2)); //return part of value
+		
+		
+		System.out.println(list.contains("3"));// available
+System.out.println(list.addAll(list2));
+		
+	}
+	
+
+}

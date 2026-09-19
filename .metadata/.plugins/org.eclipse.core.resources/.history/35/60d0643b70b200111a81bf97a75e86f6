@@ -1,0 +1,25 @@
+package com.rays.comparable;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class EmployeeTest {
+	public static void main(String[] args) {
+
+		List list = new ArrayList();
+
+		list.add(new Employee(1, "Rishabh", "CSE"));
+		list.add(new Employee(2, "Rishabh", "MBA"));
+		list.add(new Employee(3, "Ajay", "BCOM"));
+		list.add(new Employee(4, "Anand", "BBA"));
+
+	//	Collections.sort(list);
+	Collections.shuffle(list);
+
+		for (Object o : list) {
+
+			System.out.println(o);
+		}
+	}
+}

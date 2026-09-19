@@ -1,0 +1,20 @@
+package com.rays.list.linkedlist;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class TestLinkedlist {
+public static void main(String[] args) {
+	
+	LinkedList<String> list=new LinkedList<String>();
+	list.add("1");
+	list.add("2");
+	list.add("3");
+	
+	Iterator it= list.iterator();
+	while(it.hasNext()) {
+		String s=it.next();
+		System.out.println(s);
+	}
+}
+}

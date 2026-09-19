@@ -1,0 +1,17 @@
+package com.rays.streamAPI;
+
+import java.util.ArrayList;
+
+public class ContenstentTest {
+public static void main(String[] args) {
+	
+
+	List<Contestent> list = new ArrayList<>();
+
+	list.add(new Contestent("Ram", "9876543212"));
+	list.add(new Contestent("Ajay", "8815603982"));
+	list.add(new Contestent("Raj", "6268923724"));
+	list.add(new Contestent("Prince", "8349516759"));
+	list.add(new Contestent("Ram", "1176543212"));
+}
+}
