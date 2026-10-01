@@ -1,0 +1,55 @@
+package com.rays.race;
+
+
+
+ class Account1 {
+
+    private int balance = 0;
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void deposit(String name, int amount) {
+
+        int total = getBalance() + amount;
+
+        setBalance(total);
+
+        System.out.println(name + " " + getBalance());
+    }
+}
+ 
+ 
+  class Racing1 extends Thread {
+
+	    String name = null;
+
+	    public static Account account = new Account();
+
+	    public Racing1(String name) {
+	        this.name = name;
+	    }
+
+	    @Override
+	    public void run() {
+
+	        for (int i = 1; i <= 5; i++) {
+	            account.deposit(name, 1000);
+	        }
+	    }
+	}
+public class ProblemRace {
+	  public static void main(String[] args) {
+
+	        Racing t1 = new Racing("Ram");
+	        Racing t2 = new Racing("Shyam");
+
+	        t1.start();
+	        t2.start();
+	    }
+}

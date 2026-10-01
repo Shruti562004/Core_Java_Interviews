@@ -1,0 +1,21 @@
+package com.rays.merge;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class MergeFile {
+
+    public static void main(String[] args) throws IOException {
+    	
+    	FileWriter fw=new FileWriter("D:\\Core_Java_Interviews\\IO\\hello.txt");
+    	
+    	
+    	
+    	
+    	
+
+    }
+
+}

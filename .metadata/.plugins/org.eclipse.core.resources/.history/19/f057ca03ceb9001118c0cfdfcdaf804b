@@ -1,0 +1,44 @@
+package com.rays.serialization_deserialization;
+
+import java.io.*;
+
+class Person implements Serializable {
+
+    int id;
+    String name;
+    transient String password;
+
+    Person(int id, String name, String password) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+    }
+}
+
+public class TestPerson {
+
+    public static void main(String[] args) throws Exception {
+
+        Person p = new Person(101, "Shruti", "abc123");
+
+        // Serialization
+        ObjectOutputStream out =
+                new ObjectOutputStream(
+                        new FileOutputStream("D:\\Core_Java_Interviews\\IO\\email.txt"));
+
+        out.writeObject(p);
+        out.close();
+
+        //Deserialization
+        ObjectInputStream in =
+                new ObjectInputStream(
+                        new FileInputStream("D:\\Core_Java_Interviews\\IO\\email.txt"));
+
+        Person p1 = (Person) in.readObject();
+        in.close();
+
+        System.out.println(p1.id);
+        System.out.println(p1.name);
+        System.out.println(p1.password);
+    }
+}

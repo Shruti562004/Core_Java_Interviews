@@ -1,0 +1,35 @@
+package com.rays.thread;
+
+
+class JoinThread extends Thread {
+
+	String name = null;
+	
+	public JoinThread(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public void run() {
+		for(int i = 1; i <= 5; i++) {
+			System.out.println(i + " "+ name);
+		}
+	}
+}
+
+
+public class TestJoinThread {
+	public static void main(String[] args) {
+		
+		
+		JoinThread t1 = new JoinThread("Ram");
+		JoinThread t2 = new JoinThread("Shyam");
+	
+		t1.start();
+		
+		
+			t1.join(); // Wait for t1 to complete
+		
+		t2.start(); // Start t2 after t1 completes
+	}
+}

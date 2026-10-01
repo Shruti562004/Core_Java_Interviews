@@ -1,0 +1,34 @@
+package com.rays.email;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class ReadWriteValidEmail {
+	
+	public static void main(String[] args) throws IOException {
+		
+		
+		BufferedReader b1=new BufferedReader(new FileReader("D:\\Core_Java_Interviews\\IO\\email.txt"));
+		
+		BufferedWriter b2=new BufferedWriter(new FileWriter("D:\\Core_Java_Interviews\\IO\\email.txt"));
+		
+		String email=b1.readLine();
+		
+		while(email!=null) {
+		if(email.matches("^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,}$)")) {
+			System.out.println(email);
+			b2.write(email);
+			
+		}
+			email=b1.readLine();
+		}
+		System.out.println("done");
+		b1.close();
+		b2.close();
+	}
+
+}

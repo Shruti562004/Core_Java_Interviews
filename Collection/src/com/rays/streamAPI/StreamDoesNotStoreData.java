@@ -24,4 +24,4 @@ public class StreamDoesNotStoreData {
 		stream.forEach(System.out::println); // IllegalStateException — stream already consumed
 	}
 
-}
+ } 

@@ -1,0 +1,23 @@
+package com.rays.binary;
+
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class TestBufferedOutput {
+
+    public static void main(String[] args) throws IOException {
+
+        FileOutputStream f =
+                new FileOutputStream("D:\\Core_Java_Interviews\\IO\\semi.jpg");
+
+        BufferedOutputStream out =
+                new BufferedOutputStream(f);
+
+        out.write(65);
+        out.write(66);
+        out.write(67);
+System.out.println("done");
+        out.close();
+    }
+}

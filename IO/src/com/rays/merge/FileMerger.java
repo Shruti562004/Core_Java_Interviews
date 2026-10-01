@@ -1,0 +1,42 @@
+package com.rays.merge;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class FileMerger {
+	
+	public static void main(String[] args) throws IOException {
+		
+		PrintWriter p=new PrintWriter("D:\\Core_Java_Interviews\\IO\\output.txt");
+		
+		BufferedReader br=new BufferedReader(new FileReader("D:\\Core_Java_Interviews\\IO\\hello.txt"));
+		
+		String line=br.readLine();
+		
+	while(line!=null) {
+	p.println(line);	
+	
+	line= br.readLine();
+		
+	}
+	br.close();
+	
+	br=new BufferedReader(new FileReader("D:\\Core_Java_Interviews\\IO\\Shruti.txt"));
+	
+	String line1=br.readLine();
+	
+	while(line1!=null) {
+		p.println(line1);
+		line1=br.readLine();
+		
+	}
+	br.close();
+	p.close();
+	
+	System.out.println("succesfully merged");
+	}
+
+}

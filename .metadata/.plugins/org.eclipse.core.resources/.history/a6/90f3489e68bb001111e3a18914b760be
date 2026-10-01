@@ -1,0 +1,43 @@
+package com.rays.thread;
+
+class PriorityThread extends Thread {
+
+	String name = null;
+
+	public PriorityThread(String name) {
+
+        this.name = name;
+	}
+
+	@Override
+	public void run() {
+
+		for (int i = 1; i <= 5; i++) {
+
+			System.out.println(i + " " + name);
+		}
+	}
+}
+public class TestPriorityThread {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		PriorityThread t1 = new PriorityThread("Abc");
+		PriorityThread t2 = new PriorityThread("Xyz"); // phle 
+
+	    t1.start();
+
+	    t1.join();   // Main waits until t1 completes
+
+	    t2.start();
+
+	    t2.join();	
+	    t1.setPriority(1);
+		t2.setPriority(10);
+
+       //t1.setPriority(Thread.MAX_PRIORITY);
+
+		
+		System.out.println(t2.getPriority());
+	}
+}

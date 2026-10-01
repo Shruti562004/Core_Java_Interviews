@@ -1,0 +1,30 @@
+package com.rays.serialization_deserialization;
+
+import java.io.Serializable;
+
+class Marksheet implements Serializable {
+
+    public int id =0;
+    public String name = null;
+    public int maths = 0;
+    public int physics = 0;
+    public int chemistry =0;
+    public transient int total = 0;
+    public transient double percentage = 0;
+    public  transient int temp=0;
+    public int getTotal() {
+    	 total=maths+physics+chemistry;
+    	 return total;
+    }
+    
+    public double getPercentage() {
+    	
+    	percentage =total/3;
+    	return percentage;
+    }
+}
+public class TestMarksheet {
+public static void main(String[] args) {
+	
+}
+}

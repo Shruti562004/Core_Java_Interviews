@@ -1,0 +1,43 @@
+package com.rays.methods;
+
+class JoinThread1 extends Thread {
+
+    String name;
+
+    public JoinThread1(String name) {
+        this.name = name;
+    }
+
+    public void run() {
+
+        for (int i = 1; i <= 5; i++) {
+
+            System.out.println(i + " " + name);
+
+            try {
+                Thread.sleep(1000);   // 1 second
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+public class TestJoin {
+
+    public static void main(String[] args) {
+
+        JoinThread1 t1 = new JoinThread1("Ram");
+        JoinThread1 t2 = new JoinThread1("Shyam");
+
+        t1.start();
+
+        try {
+            t1.join(2000);   // main thread maximum 2 seconds ke liye t1 ka wait karta hai
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        t2.start();
+    }
+}

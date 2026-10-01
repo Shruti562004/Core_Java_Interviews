@@ -1,7 +1,5 @@
 package com.rays.streamAPI;
 
-
-
 import java.util.stream.Stream;
 
 public class StreamToArray {

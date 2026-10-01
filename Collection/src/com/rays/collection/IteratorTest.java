@@ -17,7 +17,7 @@ public static void main(String[] args) {
 	while (it.hasNext()) {
 		//it.remove(); //illegalstateException
 	    System.out.println(it.next());
-	    it.remove();
+	    it.remove(); //remove all 
 	  //  break; // remove A only
 	}
 	

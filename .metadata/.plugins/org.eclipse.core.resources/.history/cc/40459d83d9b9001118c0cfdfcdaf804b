@@ -1,0 +1,65 @@
+package com.rays.serialization_deserialization;
+
+import java.io.*;
+
+class Marksheet implements Externalizable {
+
+    int id;
+    String name;
+    int marks;
+
+    public Marksheet() {
+        // compulsory no-argument constructor
+    }
+
+    public Marksheet(int id, String name, int marks) {
+        this.id = id;
+        this.name = name;
+        this.marks = marks;
+    }
+
+    @Override
+    public void writeExternal(ObjectOutput out) throws IOException {
+
+        out.writeInt(id);
+        out.writeObject(name);
+        out.writeInt(marks);
+    }
+
+    @Override
+    public void readExternal(ObjectInput in)
+            throws IOException, ClassNotFoundException {
+
+        id = in.readInt();
+        name = (String) in.readObject();
+        marks = in.readInt();
+    }
+}
+
+public class TestExternalization {
+
+    public static void main(String[] args) throws Exception {
+
+        Marksheet m = new Marksheet(1, "Shruti", 89);
+
+        // Externalization
+        ObjectOutputStream out =
+                new ObjectOutputStream(
+                        new FileOutputStream("D:\\io\\marks.txt"));
+
+        out.writeObject(m);
+        out.close();
+
+        // De-externalization
+        ObjectInputStream in =
+                new ObjectInputStream(
+                        new FileInputStream("D:\\io\\marks.txt"));
+
+        Marksheet m1 = (Marksheet) in.readObject();
+        in.close();
+
+        System.out.println(m1.id);
+        System.out.println(m1.name);
+        System.out.println(m1.marks);
+    }
+}

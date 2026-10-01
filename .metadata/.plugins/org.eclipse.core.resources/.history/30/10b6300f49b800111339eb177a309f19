@@ -1,0 +1,23 @@
+package com.rays.fileInfo;
+
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+
+public class ReadWritePrimitiveData {
+	
+	public static void main(String[] args) {
+		
+		
+		
+		DataInputStream d=new DataInputStream(new FileInputStream("D:\\Core_Java_Interviews\\IO\\Shruti.txt"));
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

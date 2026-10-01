@@ -1,0 +1,28 @@
+package com.rays.thread;
+
+
+class UseRun extends Thread{
+	int num=0;
+	
+	public UseRun(int num) {
+		this.num=num;
+	}
+	public void run() { /*run() ko directly call kiya hai. Isliye ye main thread par normal method ki tarah execute hoga.*/
+		for(int i=0;i<=2;i++) {
+			System.out.println(num);
+		}
+		
+	}
+	
+}
+public class WithoutThread {
+	
+	public static void main(String[] args) {
+		UseRun r1=new UseRun(12);
+		UseRun r2=new UseRun(200);
+		
+ r1.run(); //call  main thread
+ r2.run();
+	}
+
+}

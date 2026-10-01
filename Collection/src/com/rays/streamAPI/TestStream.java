@@ -8,6 +8,6 @@ public class TestStream {
         List<Integer> list = Arrays.asList(10, 20, 30, 40, 50);
 
         list.stream()
-            .forEach(n -> System.out.println(n));
+            .forEach( System.out::println);
     }
 }

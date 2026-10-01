@@ -1,0 +1,20 @@
+package com.rays.binary;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class TestBinary {
+public static void main(String[] args) throws IOException {
+	
+	FileInputStream f=new FileInputStream("D:\\Core_Java_Interviews\\IO\\semi.jpg");
+	
+	int ch=f.read();
+	while(ch!=-1) {
+		System.out.println((char) ch);
+		ch=f.read();
+	}
+	
+	f.close();
+}
+}

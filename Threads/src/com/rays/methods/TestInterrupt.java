@@ -1,0 +1,30 @@
+package com.rays.methods;
+
+class MyThread6 extends Thread {
+
+    public void run() {
+        try {
+            System.out.println("Thread is sleeping");
+
+            Thread.sleep(5000); //Thread completed print nahi hoga, kyunki sleep() interrupt hone par exception aayega aur control catch block mein chala jayega.
+
+            System.out.println("Thread completed");
+        } catch (InterruptedException e) {
+            System.out.println("Thread interrupted");
+        }
+    }
+}
+
+public class TestInterrupt {
+
+    public static void main(String[] args) throws Exception {
+
+        MyThread6 t1 = new MyThread6();
+
+        t1.start();
+
+        Thread.sleep(1000);
+
+        t1.interrupt();
+    }
+}

@@ -1,0 +1,5 @@
+package com.rays.serialization_deserialization;
+
+public class TestAccount {
+
+}

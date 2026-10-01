@@ -1,0 +1,38 @@
+package com.rays.fileInfo;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class ReadWritePrimitiveData {
+	
+	public static void main(String[] args) throws IOException {
+		
+		DataOutputStream d =new DataOutputStream( new FileOutputStream("D:\\Core_Java_Interviews\\IO\\Shruti.txt"));
+
+			d.writeInt(100);
+			d.writeFloat(10.5f);
+			d.writeBoolean(true);
+			d.writeChar('A');
+
+			d.close();
+		
+		DataInputStream d=new DataInputStream(new FileInputStream("D:\\Core_Java_Interviews\\IO\\Shruti.txt"));
+		
+		System.out.println(d.readInt());
+		System.out.println(d.readFloat());
+		System.out.println(d.readBoolean());
+		System.out.println(d.readChar());
+		
+		
+		
+		
+		
+		
+		d.close();
+	}
+
+}

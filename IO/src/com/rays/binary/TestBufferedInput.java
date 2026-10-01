@@ -1,0 +1,28 @@
+/*
+FileInputStream → file se bytes read karta hai
+BufferedInputStream → bytes ko buffer karke efficiently read karta hai
+*/
+package com.rays.binary;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class TestBufferedInput {
+
+    public static void main(String[] args) throws IOException {
+
+        BufferedInputStream in =
+                new BufferedInputStream(
+                        new FileInputStream("D:\\Core_Java_Interviews\\IO\\semi.jpg"));
+
+        int i = in.read();
+
+        while (i != -1) {
+            System.out.println(i);
+            i = in.read();
+        }
+System.out.println("done");
+        in.close();
+    }
+}

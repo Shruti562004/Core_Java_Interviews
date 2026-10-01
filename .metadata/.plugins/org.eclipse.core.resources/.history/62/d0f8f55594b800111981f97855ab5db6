@@ -1,0 +1,20 @@
+package com.rays.binary;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class WriteBinary {
+public static void main(String[] args) throws IOException {
+	
+	
+	FileOutputStream f=new FileOutputStream("D:\\Core_Java_Interviews\\IO\\Shruti.txt");
+	
+
+    f.write(65);
+    f.write(66);
+    f.write(67);
+
+    f.close();
+}
+}

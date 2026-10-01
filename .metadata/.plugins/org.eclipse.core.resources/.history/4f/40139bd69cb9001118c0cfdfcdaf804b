@@ -1,0 +1,10 @@
+package com.rays.split;
+
+public class TestFileSplit {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

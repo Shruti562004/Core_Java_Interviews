@@ -1,0 +1,35 @@
+package com.rays.thread;
+
+
+class Hello extends Thread{
+	private String name=null;
+	
+	public Hello(String name) {
+		this.name=name;
+		
+	}
+	
+	public void run() {
+	for(int i=0;i<20;i++) {
+		System.out.println(i + "#" +name);
+		System.out.println(Thread.currentThread().getName());
+	}
+		
+	}
+}
+public class TestThread {
+public static void main(String[] args) {
+	
+Hello t1=new Hello("Sandeep");
+Hello t2=new Hello("Rish");
+
+t1.start();
+t2.start();
+
+for(int i=0;i<20;i++) {
+	System.out.println(i + "I am main");
+	System.out.println(Thread.currentThread().getName());
+}
+	
+}
+}

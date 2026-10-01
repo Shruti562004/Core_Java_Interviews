@@ -1,0 +1,15 @@
+package com.rays.thread;
+
+
+class Hello extends Thread{
+	private String name=null;
+	
+	public Hello(String name) {
+		this.name=name;
+		
+	}
+	
+}
+public class TestThread {
+
+}

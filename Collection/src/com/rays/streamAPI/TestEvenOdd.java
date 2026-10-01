@@ -1,6 +1,7 @@
 package com.rays.streamAPI;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 
 public class TestEvenOdd {
@@ -29,7 +30,8 @@ public class TestEvenOdd {
 //		stream.distinct().filter(c -> oddEven(c)).forEach(c -> {});
 		
 		Arrays.stream(arr).filter(e -> e % 2 == 0).forEach(System.out::println);
-		
-		
+		System.out.println("---------------------------------------------------");
+		List<Integer> l=Arrays.asList(1,2,5,8,9,0);
+		l.stream().filter(n->n%2!=0).forEach(System.out::println);
 	}
 }

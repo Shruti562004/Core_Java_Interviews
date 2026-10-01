@@ -1,0 +1,51 @@
+package com.rays.serialization_deserialization;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Account implements Serializable {
+
+	public String accountNo;
+	public transient int balance;
+
+	public Account(String a, int b) {
+		this.accountNo = a;
+		this.balance = b;
+	}
+
+	@Override
+	public String toString() {
+		return accountNo + " " + balance;
+	}
+}
+
+
+public class TestAccount {
+
+	public static void main(String[] args) throws Exception {
+
+		Account a = new Account("1", 500);
+
+        System.out.println("Before Serialization : " + a);
+
+		ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("D:\\Core_Java_Interviews\\IO\\File1.txt"));
+
+		// Convert Account class object into byte stream: serialization
+		out.writeObject(a);
+        System.out.println(out);
+        System.out.println(a.accountNo);
+        System.out.println(a.balance);
+		out.close();
+
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream("D:\\Core_Java_Interviews\\IO\\File1.txt"));
+
+		// Convert byte stream into Account class object: deserialization
+		Account a1=(Account) in.readObject();
+		System.out.println(a1.accountNo);
+System.out.println(a1.balance);
+		in.close();
+	}
+}

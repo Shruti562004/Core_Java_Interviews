@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;IO/src/com/rays/binary/TestBinary.java&apos; to &apos;ReadBinary.java&apos;" description="Rename resource &apos;TestBinary.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/rays/binary/TestBinary.java" name="ReadBinary.java" stamp="1790277391831" updateReferences="true"/>
+</session>

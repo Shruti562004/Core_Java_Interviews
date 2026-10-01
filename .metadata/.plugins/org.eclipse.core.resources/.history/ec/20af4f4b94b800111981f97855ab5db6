@@ -1,0 +1,12 @@
+package com.rays.binary;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class WriteBinary {
+public static void main(String[] args) throws FileNotFoundException {
+	
+	
+	FileOutputStream d=new FileOutputStream("D:\\Core_Java_Interviews\\IO\\Shruti.txt");
+}
+}

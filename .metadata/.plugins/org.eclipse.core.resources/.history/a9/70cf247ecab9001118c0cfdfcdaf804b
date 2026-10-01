@@ -1,0 +1,26 @@
+package com.rays.serialization_deserialization;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Student implements Serializable{
+	int num;
+	String name;
+	
+	public Student(int num ,String name) {
+		this.num=num;
+		this.name=name;
+	}
+	
+}
+
+public class TestStudent{
+	
+	public static void main(String[] args) {
+		Student s=new Student(1, "Shruti");
+		
+		ObjectOutputStream os=new ObjectOutputStream(new FileOutputStream("D:\\Core_Java_Interviews\\IO\\Shruti.txt");
+	}
+
+}

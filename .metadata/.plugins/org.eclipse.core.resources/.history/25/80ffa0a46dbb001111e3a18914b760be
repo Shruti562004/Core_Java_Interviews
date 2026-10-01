@@ -1,0 +1,33 @@
+package com.rays.thread;
+
+class MyThread extends Thread {
+
+    public void run() {
+
+        while (true) {
+            System.out.println("Daemon thread running...");
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+public class TestDaemon {
+
+    public static void main(String[] args) throws Exception {
+
+        MyThread t1 = new MyThread();
+
+      //  t1.setDaemon(true);   // make daemon thread
+
+        t1.start();
+
+        Thread.sleep(3000);
+
+        System.out.println("Main thread finished");
+    }
+}

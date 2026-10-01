@@ -1,0 +1,16 @@
+package com.rays.split;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class TestFileSplit {
+	
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br=new BufferedReader(new FileReader("D:\\Core_Java_Interviews\\IO\\Shruti.txt"));
+		
+		
+	}
+
+}

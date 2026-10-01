@@ -1,0 +1,25 @@
+package com.rays.runnable;
+class ByRunnable implements Runnable{
+	String name=null;
+	public ByRunnable(String name) {
+		this.name=name;
+		
+	}
+	public void run() {
+		for(int i=0;i<=1;i++) {
+			System.out.println();
+			
+		}
+		
+	}
+	
+}
+public class TestRunnable {
+public static void main(String[] args) {
+	Thread t1=new Thread(new ByRunnable("shruti"));
+
+	Thread t2=new Thread(new ByRunnable("hlo"));
+	
+	t1.start();
+}
+}

@@ -1,0 +1,36 @@
+package com.rays.thread;
+
+
+class Hello extends Thread{
+	private String name=null;
+	
+	public Hello(String name) {
+		this.name=name;
+		
+	}
+	
+	public void run() {
+
+		System.out.println(Thread.currentThread().getName());
+	for(int i=0;i<3;i++) {
+		System.out.println(name);
+
+	}
+		
+	                
+	}
+}
+public class TestThread {
+public static void main(String[] args) {
+	
+Hello t1=new Hello("Sandeep");
+Hello t2=new Hello("Rish");
+
+t1.start();
+/*t1.start(); IllegalThreadStateException aayega, kyunki ek Thread object ko dobara start() nahi kar sakte.*/
+t2.start();
+System.out.println(Thread.currentThread().getName());
+
+	
+}
+}

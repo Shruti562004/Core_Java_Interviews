@@ -1,0 +1,10 @@
+package com.rays.binary;
+
+import java.io.FileInputStream;
+
+public class TestBinary {
+public static void main(String[] args) {
+	
+	FileInputStream f=new FileInputStream("D:\\Core_Java_Interviews\\IO\\semi.jpg");
+}
+}

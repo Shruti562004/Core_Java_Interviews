@@ -1,0 +1,31 @@
+package com.rays.methods;
+
+class MyThread8 extends Thread {
+
+    public void run() {
+
+        Thread t = Thread.currentThread();
+
+        System.out.println("Thread Name: " + t.getName());
+        System.out.println("Thread ID: " + t.getId());
+        System.out.println("Thread Priority: " + t.getPriority());
+    }
+}
+
+public class TestCurrentThread {
+
+    public static void main(String[] args) {
+
+        // Current main thread
+        Thread t = Thread.currentThread();
+
+        System.out.println("Main Thread Name: " + t.getName());
+
+        // Create child thread
+        MyThread8 t1 = new MyThread8();
+
+        t1.setName("ShrutiThread");
+
+        t1.start();
+    }
+}
