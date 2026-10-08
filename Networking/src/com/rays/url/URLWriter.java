@@ -15,23 +15,23 @@ public class URLWriter {
 		
 		String question = "java";
 		
-		URLConnection conn = u.openConnection();
+		URLConnection conn = u.openConnection();//URL ke saath connection object create hota hai.
 		
-		conn.setDoOutput(true);
+		conn.setDoOutput(true);//Connection ko bataya ki hum server ko data send/write kareng
 		
-		OutputStreamWriter write = new OutputStreamWriter(conn.getOutputStream());
+		OutputStreamWriter write = new OutputStreamWriter(conn.getOutputStream());//bejne k liye
 		
 		write.write("q = "+question);
 		
 		write.close();
 		
-		conn.connect();
+		conn.connect();//Server ke saath connection establish/activate hota hai.
 		
-		InputStream in = conn.getInputStream();
-		
+		InputStream in = conn.getInputStream();//rsponse receive
+		ii
 		Scanner sc = new Scanner(in);
 		
-		while(sc.hasNext()) {
+		while(sc.hasNext()) { 
 			System.out.println(sc.nextLine());
 		}
 	}

@@ -27,4 +27,4 @@ public class URLReader {
 			System.out.println(sc.nextLine());
 		}
 	}
-}
+}   

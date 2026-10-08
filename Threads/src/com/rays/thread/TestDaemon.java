@@ -7,7 +7,7 @@ class MyThread extends Thread {
         while (true) {
             System.out.println("Daemon thread running...");
 
-                try {
+               try {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
@@ -28,7 +28,7 @@ public class TestDaemon {
 
         t1.start();
 
-        Thread.sleep(3000); // background mr t1 chltsa rhega , main thread 3 sec k liye hold
+        Thread.sleep(5000); // background mr t1 chltsa rhega , main thread 3 sec k liye hold
 
         System.out.println("Main thread finished");
         

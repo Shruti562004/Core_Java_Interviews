@@ -15,7 +15,7 @@ public class TCPClient {
 
 	public static void main(String[] args) throws Exception {
 
-		Socket client = new Socket("localhost", 1234);
+		Socket client = new Socket("localhost", 1234); //same conmputer , 1234 port pr wait krega connection ka
 
 		DataInputStream in = new DataInputStream(client.getInputStream());
 

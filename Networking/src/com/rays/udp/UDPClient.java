@@ -7,17 +7,17 @@ import java.net.InetAddress;
 public class UDPClient {
 
 	public static void main(String[] args) throws Exception{
-		
+	//send 	
 		DatagramSocket socket = new DatagramSocket();
 		
 		byte[] bt = "Hello from UDP client".getBytes();
 		
-		InetAddress address = InetAddress.getByName("127.0.0.1");
+		InetAddress address = InetAddress.getByName("127.0.0.1");//server ka ip addreass
 		
 		DatagramPacket packet = new DatagramPacket(bt, bt.length, address, 4445);
 		
 		socket.send(packet);
-		
+	//recive	
 		bt = new byte[256];
 		
 		packet = new DatagramPacket(bt, bt.length);

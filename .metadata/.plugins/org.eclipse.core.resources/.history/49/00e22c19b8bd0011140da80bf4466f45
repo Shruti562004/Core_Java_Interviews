@@ -1,0 +1,38 @@
+  package com.rays.tcp;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+/*Server ka main kaam hai client ka wait karna, 
+ * connection accept karna, client ko message bhejna aur 
+ * client ka message receive karn*/
+public class TCPServer {
+
+	public static void main(String[] args) throws Exception {
+
+		ServerSocket server = new ServerSocket(1234);
+
+	System.out.println("server wait for client.....");
+
+		Socket client = server.accept();//wait
+		System.out.println("client connected");
+
+		DataInputStream in = new DataInputStream(client.getInputStream()); //Client ko data recieve karne ke liye stream deta hai.
+
+		DataOutputStream out = new DataOutputStream(client.getOutputStream());//Client ko data send karne ke liye stream deta hai.
+
+		out.writeBytes("Hello Client\n");   // client ko msg bhej raha hai
+
+		String s = in.readLine(); //client ka msg recive
+
+		System.out.println(s);
+
+		client.close();
+		server.close();
+
+	}
+}/*
+getOutputStream() → data bahar bhejna
+getInputStream() → data andar lena
+
+*/

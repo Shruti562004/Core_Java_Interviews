@@ -19,20 +19,29 @@ package com.rays.udp;
 	public class UDPServer {
 
 		public static void main(String[] args) throws Exception {
-
+//recieve
 			DatagramSocket socket = new DatagramSocket(4445); //data send and recieve
 
 			byte[] bt = new byte[256];
-System.out.println("server");
+
 			DatagramPacket packet = new DatagramPacket(bt, bt.length);
+			
+			/*bt → Byte array, jisme received data store hoga.
+
+bt.length → Byte array ki total capacity, jaise 256 bytes*/
 
 			socket.receive(packet);
 
-			String receive = new String(packet.getData(), 0, packet.getLength()); /*Received packet ke actual bytes ko index 0
-			se packet ki actual length tak String me convert karo*/
+			String receive = new String(packet.getData(), 0, packet.getLength());
 			
-			System.out.println("Recieve:" + receive);
+			/*packet.getData() → packet ke andar ka byte array leta hai.
+0 → index 0 se start karo.
+packet.getLength() → actual received data ki length lo.
+new String(...) → bytes ko String mein convert karo.*/
+			
+			System.out.println("Recieve:" + receive);//Recieve:Hello from UDP client
 
+	//send
 			String response = "Hello from UDP server";
 
 			bt = response.getBytes();//String ko byte array (byte[]) me convert karti hai.

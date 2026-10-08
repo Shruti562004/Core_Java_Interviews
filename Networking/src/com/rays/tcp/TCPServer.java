@@ -12,20 +12,20 @@ public class TCPServer {
 
 		ServerSocket server = new ServerSocket(1234);
 
-		System.out.println("serer wait for client.....");
+	System.out.println("server wait for client.....");
 
-		Socket client = server.accept();
+		Socket client = server.accept();//wait
 		System.out.println("client connected");
 
-		DataInputStream in = new DataInputStream(client.getInputStream());
+		DataInputStream in = new DataInputStream(client.getInputStream()); //Client ko data recieve karne ke liye stream deta hai.
 
-		DataOutputStream out = new DataOutputStream(client.getOutputStream());
+		DataOutputStream out = new DataOutputStream(client.getOutputStream());//Client ko data send karne ke liye stream deta hai.
 
-		out.writeBytes("Hello Client\n");   // client ko bhej raha hai
+		out.writeBytes("Hello Client\n");   // client ko msg bhej raha hai
 
-		String s = in.readLine();
+		String s = in.readLine(); //client ka msg recive 
 
-		System.out.println(s);
+		System.out.println(s);  //hello server
 
 		client.close();
 		server.close();
